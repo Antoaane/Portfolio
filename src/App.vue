@@ -2,8 +2,8 @@
   <header>
       <nav class="h-full container flex justify-between items-center">
         <a href="./home.html">
-            <span>Mon</span>
-            <span>VPS</span>
+            <span>Mon </span>
+            <span class="vps">VPS</span>
         </a>
         <ul class="hidden" id="menu">
           <li><RouterLink to="/works">WORKS</RouterLink></li>
@@ -42,6 +42,7 @@ const steak = ref(null);
 onMounted(() => {
   const hamburger = document.getElementById('hamburger');
   const menu = document.getElementById('menu');
+  const menuBg = document.getElementById('menu-bg');
   const tomato = document.getElementById('tomato');
   const cheese = document.getElementById('cheese');
   const steak = document.getElementById('steak');
@@ -53,12 +54,14 @@ onMounted(() => {
           steak.style.animation = "steak 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
 
           menu.classList.remove('hidden');
+          menuBg.style.animation = "menuBg 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
       } else {
           tomato.style.animation = "tomatoBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
           cheese.style.transform = "scaleX(1)";
           steak.style.animation = "steakBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
 
           menu.classList.add('hidden');
+          menuBg.style.animation = "menuBgBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
       }
   });
 });
