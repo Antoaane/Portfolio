@@ -37,8 +37,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        background-color: $primary;
-
         border-radius: 9999px;
     }
 }
@@ -111,14 +109,18 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        background-color: $primary;
     }
     100% {
         width: 100vw;
         height: 100vw;
 
         top: 50%;
-        left: 50%;
+        left: -22vw;
         transform: translate(-50%, -50%);
+
+        background-color: $tertiary;
     }
 }
 
@@ -128,8 +130,10 @@
         height: 100vw;
 
         top: 50%;
-        left: 50%;
+        left: -22vw;
         transform: translate(-50%, -50%);
+        
+        background-color: $tertiary;
     }
     100% {
         width: 0;
@@ -138,5 +142,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        background-color: $primary;
     }
 }

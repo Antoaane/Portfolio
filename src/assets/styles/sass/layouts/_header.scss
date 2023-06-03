@@ -4,15 +4,27 @@ header {
     background: linear-gradient(95deg, $primary 0%, #64ceb4 85%);
 
     nav {
-        &>a {
+        .title {
+            z-index: 10;
+
             &>span {
                 color: white;
                 font-size: 3rem;
             }
+
+            #vps {
+                transition: all 0.25s ease-in-out 0.20s;
+            }
         }
-    }
 
-    .menu-container {
+        &>ul {
+            z-index: 1;
 
+            &>li {
+                .menu-item {
+
+                }
+            }
+        }
     }
 }

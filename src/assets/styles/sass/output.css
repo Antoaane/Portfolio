@@ -32,7 +32,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #8FE9B9;
   border-radius: 9999px;
 }
 
@@ -95,13 +94,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #8FE9B9;
   }
   100% {
     width: 100vw;
     height: 100vw;
     top: 50%;
-    left: 50%;
+    left: -22vw;
     transform: translate(-50%, -50%);
+    background-color: #CAF6DF;
   }
 }
 @keyframes menuBgBack {
@@ -109,8 +110,9 @@
     width: 100vw;
     height: 100vw;
     top: 50%;
-    left: 50%;
+    left: -22vw;
     transform: translate(-50%, -50%);
+    background-color: #CAF6DF;
   }
   100% {
     width: 0;
@@ -118,15 +120,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #8FE9B9;
   }
 }
 header {
   height: 90px;
   background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
 }
-header nav > a > span {
+header nav .title {
+  z-index: 10;
+}
+header nav .title > span {
   color: white;
   font-size: 3rem;
+}
+header nav .title #vps {
+  transition: all 0.25s ease-in-out 0.2s;
+}
+header nav > ul {
+  z-index: 1;
 }
 footer p {
   color: #52BEA8;
