@@ -16,15 +16,5 @@ header {
                 transition: all 0.25s ease-in-out 0.20s;
             }
         }
-
-        &>ul {
-            z-index: 1;
-
-            &>li {
-                .menu-item {
-
-                }
-            }
-        }
     }
 }

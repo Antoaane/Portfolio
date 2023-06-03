@@ -61,6 +61,7 @@ onMounted(() => {
           steak.style.animation = "steak 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
 
           menu.classList.remove('hidden');
+          menu.style.animation = "menu 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) 0.2s forwards";
           menuBg.style.animation = "menuBg 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
 
           vps.style.color = "#526C67";
