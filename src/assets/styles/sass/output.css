@@ -1,0 +1,89 @@
+header {
+  height: 90px;
+  background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
+}
+header nav #hamburger {
+  height: 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header nav #hamburger > #tomato, header nav #hamburger > #steak, header nav #hamburger > #cheese {
+  width: 3rem;
+  height: 5px;
+  z-index: 1;
+  display: block;
+  background-color: white;
+  transform-origin: center;
+}
+header nav #hamburger #cheese {
+  transition: all 0.25s ease-in-out 0.2s;
+}
+header nav #hamburger:hover {
+  cursor: pointer;
+}
+header nav #hamburger #menu-bg {
+  width: 120vw;
+  height: 120vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  background-color: #8FE9B9;
+  border-radius: 9999px;
+}
+@keyframes tomato {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(15px);
+  }
+  100% {
+    transform: rotate(45deg) translate(10px, 11px);
+  }
+}
+@keyframes tomatoBack {
+  0% {
+    transform: rotate(45deg) translate(10px, 11px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(15px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+@keyframes steak {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-15px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(10px, -11px);
+  }
+}
+@keyframes steakBack {
+  0% {
+    transform: rotate(-45deg) translate(10px, -11px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-15px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+footer p {
+  color: #52BEA8;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=output.css.map */
