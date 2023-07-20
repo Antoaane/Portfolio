@@ -14,10 +14,10 @@
         </ul>
         
         <div class="close" id="hamburger">
-            <span id="menu-bg"></span>
-            <span id="tomato"></span>
-            <span id="cheese"></span>
-            <span id="steak"></span>
+          <span id="menu-bg"></span>
+          <span id="tomato"></span>
+          <span id="cheese"></span>
+          <span id="steak"></span>
         </div>
     </nav>
   </header>
@@ -56,23 +56,27 @@ onMounted(() => {
 
   hamburger.addEventListener('click', () => {
       if (menu.classList.contains('hidden')) {
-          tomato.style.animation = "tomato 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
-          cheese.style.transform = "scaleX(0)";
-          steak.style.animation = "steak 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
+        tomato.style.animation = "tomato 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
+        cheese.style.transform = "scaleX(0)";
+        steak.style.animation = "steak 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
 
-          menu.classList.remove('hidden');
-          menuBg.style.animation = "menuBg 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
+        menu.classList.remove('hidden');
+        menu.style.animation = "menu 0.5s cubic-bezier(1,0,0,1) 0.2s forwards";
+        menuBg.style.animation = "menuBg 0.75s cubic-bezier(1,0,0,1) forwards";
 
-          vps.style.color = "#526C67";
+        vps.style.animation = "vps 0.75s cubic-bezier(1,0,0,1) forwards";
       } else {
-          tomato.style.animation = "tomatoBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
-          cheese.style.transform = "scaleX(1)";
-          steak.style.animation = "steakBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
+        tomato.style.animation = "tomatoBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
+        cheese.style.transform = "scaleX(1)";
+        steak.style.animation = "steakBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards"
 
+        menu.style.animation = "menuBack 0.5s cubic-bezier(1,0,0,1) forwards";
+        setTimeout(() => {
           menu.classList.add('hidden');
-          menuBg.style.animation = "menuBgBack 0.5s cubic-bezier(0.68,-0.55,0.29,1.65) forwards";
+        }, 500);
+        menuBg.style.animation = "menuBgBack 0.75s cubic-bezier(1,0,0,1) forwards";
 
-          vps.style.color = "#fff";
+        vps.style.animation = "vpsBack 0.75s cubic-bezier(1,0,0,1) forwards";
       }
   });
 });

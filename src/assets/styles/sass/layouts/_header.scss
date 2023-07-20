@@ -13,18 +13,32 @@ header {
             }
 
             #vps {
-                transition: all 0.25s ease-in-out 0.20s;
+                transition: all 0.25s ease-in-out 0.5s;
             }
         }
+    }
+}
 
-        &>ul {
-            z-index: 1;
+@keyframes vps {
+    0% {
+        color: white;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: $dark;
+    }
+}
 
-            &>li {
-                .menu-item {
-
-                }
-            }
-        }
+@keyframes vpsBack {
+    0% {
+        color: $dark;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: white;
     }
 }

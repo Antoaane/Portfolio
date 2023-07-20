@@ -41,6 +41,39 @@
     }
 }
 
+ul {
+    height: 60vh;
+
+    position: absolute;
+    z-index: 1;
+    top: 15vh;
+    left: 55%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+
+    transition: all 0.25s ease-in-out 0.20s;
+
+    &>li {
+        display: flex;
+        justify-content: center;
+
+        .menu-item {
+            color: $dark;
+            font-size: 3rem;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
 // ------------------------------  Animations Burger  ------------------------------ //
 
 @keyframes tomato {
@@ -144,5 +177,23 @@
         transform: translate(-50%, -50%);
 
         background-color: $primary;
+    }
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menuBack {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

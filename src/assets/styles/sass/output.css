@@ -35,6 +35,31 @@
   border-radius: 9999px;
 }
 
+ul {
+  height: 60vh;
+  position: absolute;
+  z-index: 1;
+  top: 15vh;
+  left: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.25s ease-in-out 0.2s;
+}
+ul > li {
+  display: flex;
+  justify-content: center;
+}
+ul > li .menu-item {
+  color: #526C67;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+ul > li .menu-item:hover {
+  color: #8FE9B9;
+}
+
 @keyframes tomato {
   0% {
     transform: rotate(0deg) translateY(0px);
@@ -123,6 +148,22 @@
     background-color: #8FE9B9;
   }
 }
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menuBack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 header {
   height: 90px;
   background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
@@ -135,13 +176,37 @@ header nav .title > span {
   font-size: 3rem;
 }
 header nav .title #vps {
-  transition: all 0.25s ease-in-out 0.2s;
+  transition: all 0.25s ease-in-out 0.5s;
 }
-header nav > ul {
-  z-index: 1;
+
+@keyframes vps {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #526C67;
+  }
+}
+@keyframes vpsBack {
+  0% {
+    color: #526C67;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
 }
 footer p {
   color: #52BEA8;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .container {
