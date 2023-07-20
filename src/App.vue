@@ -1,8 +1,8 @@
 <template>
   <header>
-      <nav class="h-full container flex justify-between items-center">
+      <nav class="h-full flex justify-between items-center">
         <RouterLink class="title" to="/">
-            <span>Mon </span>
+            <span>MY </span>
             <span id="vps">VPS</span>
         </RouterLink>
         <ul class="hidden" id="menu">

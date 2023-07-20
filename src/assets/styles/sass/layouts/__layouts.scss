@@ -13,3 +13,8 @@ html {
 .container {
     margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

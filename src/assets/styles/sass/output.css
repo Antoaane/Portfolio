@@ -36,11 +36,11 @@
 }
 
 ul {
-  height: 60vh;
+  height: 35vw;
   position: absolute;
   z-index: 1;
-  top: 15vh;
-  left: 55%;
+  top: 10vh;
+  right: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +49,6 @@ ul {
 }
 ul > li {
   display: flex;
-  justify-content: center;
 }
 ul > li .menu-item {
   color: #526C67;
@@ -58,6 +57,21 @@ ul > li .menu-item {
 }
 ul > li .menu-item:hover {
   color: #8FE9B9;
+}
+ul > li:nth-child(1) {
+  transform: translateX(-13.5vw);
+}
+ul > li:nth-child(2) {
+  transform: translateX(-15.5vw);
+}
+ul > li:nth-child(3) {
+  transform: translateX(-14.5vw);
+}
+ul > li:nth-child(4) {
+  transform: translateX(-11vw);
+}
+ul > li:nth-child(5) {
+  transform: translateX(-2.5vw);
 }
 
 @keyframes tomato {
@@ -122,22 +136,27 @@ ul > li .menu-item:hover {
     background-color: #8FE9B9;
   }
   100% {
-    width: 100vw;
-    height: 100vw;
-    top: 50%;
-    left: -22vw;
+    width: 60vw;
+    height: 60vw;
+    top: 15vw;
+    left: -15vw;
     transform: translate(-50%, -50%);
     background-color: #CAF6DF;
   }
 }
 @keyframes menuBgBack {
   0% {
-    width: 100vw;
-    height: 100vw;
-    top: 50%;
-    left: -22vw;
+    width: 60vw;
+    height: 60vw;
+    top: 15vw;
+    left: -15vw;
     transform: translate(-50%, -50%);
     background-color: #CAF6DF;
+  }
+  95% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   100% {
     width: 0;
@@ -167,6 +186,9 @@ ul > li .menu-item:hover {
 header {
   height: 90px;
   background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
+}
+header nav {
+  padding: 0 10vw;
 }
 header nav .title {
   z-index: 10;
@@ -211,6 +233,11 @@ html {
 
 .container {
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 /*# sourceMappingURL=output.css.map */
