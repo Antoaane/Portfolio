@@ -34,6 +34,49 @@ header nav #hamburger #menu-bg {
   background-color: #8FE9B9;
   border-radius: 9999px;
 }
+<<<<<<< HEAD
+=======
+
+ul {
+  height: 35vw;
+  position: absolute;
+  z-index: 1;
+  top: 10vh;
+  right: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.25s ease-in-out 0.2s;
+}
+ul > li {
+  display: flex;
+}
+ul > li .menu-item {
+  color: #526C67;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+ul > li .menu-item:hover {
+  color: #8FE9B9;
+}
+ul > li:nth-child(1) {
+  transform: translateX(-13.5vw);
+}
+ul > li:nth-child(2) {
+  transform: translateX(-15.5vw);
+}
+ul > li:nth-child(3) {
+  transform: translateX(-14.5vw);
+}
+ul > li:nth-child(4) {
+  transform: translateX(-11vw);
+}
+ul > li:nth-child(5) {
+  transform: translateX(-2.5vw);
+}
+
+>>>>>>> 0a5d15702b691c16e0ba5621f6fed7eb01618154
 @keyframes tomato {
   0% {
     transform: rotate(0deg) translateY(0px);
@@ -78,12 +121,121 @@ header nav #hamburger #menu-bg {
     transform: rotate(0deg) translateY(0px);
   }
 }
+<<<<<<< HEAD
+=======
+@keyframes menuBg {
+  0% {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8FE9B9;
+  }
+  100% {
+    width: 60vw;
+    height: 60vw;
+    top: 15vw;
+    left: -15vw;
+    transform: translate(-50%, -50%);
+    background-color: #CAF6DF;
+  }
+}
+@keyframes menuBgBack {
+  0% {
+    width: 60vw;
+    height: 60vw;
+    top: 15vw;
+    left: -15vw;
+    transform: translate(-50%, -50%);
+    background-color: #CAF6DF;
+  }
+  95% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8FE9B9;
+  }
+}
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menuBack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+header {
+  height: 90px;
+  background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
+}
+header nav {
+  padding: 0 10vw;
+}
+header nav .title {
+  z-index: 10;
+}
+header nav .title > span {
+  color: white;
+  font-size: 3rem;
+}
+header nav .title #vps {
+  transition: all 0.25s ease-in-out 0.5s;
+}
+
+@keyframes vps {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #526C67;
+  }
+}
+@keyframes vpsBack {
+  0% {
+    color: #526C67;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+>>>>>>> 0a5d15702b691c16e0ba5621f6fed7eb01618154
 footer p {
   color: #52BEA8;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .container {
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 /*# sourceMappingURL=output.css.map */

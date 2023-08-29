@@ -4,8 +4,15 @@ header {
     background: linear-gradient(95deg, $primary 0%, #64ceb4 85%);
 
     nav {
+<<<<<<< HEAD
         #hamburger {
             height: 35px;
+=======
+        padding: 0 10vw;
+
+        .title {
+            z-index: 10;
+>>>>>>> 0a5d15702b691c16e0ba5621f6fed7eb01618154
 
             position: relative;
 
@@ -25,6 +32,7 @@ header {
                 transform-origin: center;
             }
 
+<<<<<<< HEAD
             #cheese {
                 transition: all 0.25s ease-in-out 0.20s;
             }
@@ -101,4 +109,35 @@ header {
     100% {
         transform: rotate(0deg) translateY(0px);
     }    
+=======
+            #vps {
+                transition: all 0.25s ease-in-out 0.5s;
+            }
+        }
+    }
+}
+
+@keyframes vps {
+    0% {
+        color: white;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: $dark;
+    }
+}
+
+@keyframes vpsBack {
+    0% {
+        color: $dark;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: white;
+    }
+>>>>>>> 0a5d15702b691c16e0ba5621f6fed7eb01618154
 }
