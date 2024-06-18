@@ -1,0 +1,14 @@
+header {
+  height: 90px;
+  background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
+}
+
+footer p {
+  color: #52BEA8;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=output.css.map */
