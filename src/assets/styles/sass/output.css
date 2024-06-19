@@ -32,6 +32,7 @@ footer p {
 #top {
   height: 100vh;
   padding-bottom: 5rem;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -46,19 +47,48 @@ footer p {
 #top .main-title {
   width: 100%;
   padding: 0 3rem;
-  line-height: 1.25;
+  line-height: 1.15;
 }
 #top .main-title .top {
   width: max-content;
   margin-right: auto;
   margin-left: 0;
+  position: relative;
   display: block;
+}
+#top .main-title .top::after {
+  content: "_";
+  position: absolute;
+  right: -7.5rem;
+  transform: scaleX(150%);
 }
 #top .main-title .bot {
   width: max-content;
   margin-right: 0;
   margin-left: auto;
-  display: block;
+  display: flex;
+}
+#top .main-title .bot svg {
+  margin-right: 7rem;
+}
+#top .star_arrow_svg {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#top .star_arrow_svg > path {
+  animation: arrow_star_spin 30s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes arrow_star_spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

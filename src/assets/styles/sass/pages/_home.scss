@@ -1,6 +1,7 @@
 #top {
     height: 100vh;
     padding-bottom: 5rem;
+    position : relative;
 
     display: flex;
     align-items: center;
@@ -17,14 +18,23 @@
     .main-title {
         width: 100%;
         padding: 0 3rem;
-        line-height: 1.25;
+        line-height: 1.15;
         
         .top {
             width: max-content;
             margin-right: auto;
             margin-left: 0;
 
+            position: relative;
+
             display: block;
+
+            &::after {
+                content: '_';
+                position: absolute;
+                right: -7.5rem;
+                transform: scaleX(150%);
+            }
         }
 
         .bot {
@@ -32,7 +42,32 @@
             margin-right: 0;
             margin-left: auto;
 
-            display: block;
+            display : flex;
+
+            svg {
+                margin-right: 7rem;
+            }
         }
+    }
+
+    .star_arrow_svg {
+        position : absolute;
+        bottom: 7vh;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        &>path {
+            animation: arrow_star_spin 30s linear infinite;
+            transform-origin: center;
+        }
+    }
+}
+
+@keyframes arrow_star_spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

@@ -4,10 +4,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-      <nav class="h-full flex justify-evenly items-center">
+      <!-- <nav class="h-full flex justify-evenly items-center">
         <RouterLink to="/">Home</RouterLink> |
         <RouterLink to="/works">My Works</RouterLink>
-      </nav>
+      </nav> -->
   </header>
 
   <RouterView />
