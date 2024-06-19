@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Iquost";
+  src: url("/res/fonts/iquost.otf");
+  font-weight: 600;
+}
+.main-title {
+  font-size: 12rem;
+  font-family: "Iquost";
+  margin-bottom: 1rem;
+  color: #FFFDF7;
+}
+
+.font-alt {
+  font-feature-settings: "salt" 1;
+}
+
 header {
   height: 90px;
   position: absolute;
@@ -6,7 +22,7 @@ header {
 }
 
 footer p {
-  color: #52BEA8;
+  color: #4E485F;
 }
 
 .container {
@@ -15,7 +31,7 @@ footer p {
 
 #top {
   height: 100vh;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   display: flex;
   align-items: center;
 }
@@ -28,9 +44,21 @@ footer p {
   z-index: -1;
 }
 #top .main-title {
-  font-size: 10rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0 3rem;
+  line-height: 1.25;
+}
+#top .main-title .top {
+  width: max-content;
+  margin-right: auto;
+  margin-left: 0;
+  display: block;
+}
+#top .main-title .bot {
+  width: max-content;
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,6 +1,6 @@
 #top {
     height: 100vh;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 
     display: flex;
     align-items: center;
@@ -15,8 +15,24 @@
     }
 
     .main-title {
-        font-size: 10rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0 3rem;
+        line-height: 1.25;
+        
+        .top {
+            width: max-content;
+            margin-right: auto;
+            margin-left: 0;
+
+            display: block;
+        }
+
+        .bot {
+            width: max-content;
+            margin-right: 0;
+            margin-left: auto;
+
+            display: block;
+        }
     }
 }

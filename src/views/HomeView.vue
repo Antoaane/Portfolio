@@ -2,13 +2,13 @@
   <main>
     <div id="top" class="container">
 
-      <video autoplay muted loop>
-        <source src="../../public/res/videos/bg.mp4" type="video/mp4">
+      <video autoplay muted loop speed="5" id="bg-video">
+        <source src="/res/videos/bg.mp4" type="video/mp4">
       </video>
 
       <h1 class="main-title">
-        <span>Je développe</span><br>
-        <span>vos projets</span>
+        <span class="top">Je développe</span>
+        <span class="bot">vos projets</span>
       </h1>
       
     </div>
