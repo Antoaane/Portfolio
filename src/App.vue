@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
   
-  <footer>
+  <!-- <footer>
     <p>Footer</p>
-  </footer>
+  </footer> -->
 </template>

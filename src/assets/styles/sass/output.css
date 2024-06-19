@@ -1,6 +1,8 @@
 header {
   height: 90px;
-  background: linear-gradient(95deg, #8FE9B9 0%, #64ceb4 85%);
+  position: absolute;
+  inset: 0;
+  z-index: 999;
 }
 
 footer p {
@@ -9,6 +11,26 @@ footer p {
 
 .container {
   margin: 0 auto;
+}
+
+#top {
+  height: 100vh;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+}
+#top video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#top .main-title {
+  font-size: 10rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=output.css.map */
