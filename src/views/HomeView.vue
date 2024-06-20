@@ -1,16 +1,26 @@
 <script setup>
   import star_1_svg from '../components/SVGs/star_1_svg.vue'
   import star_arrow_svg from '../components/SVGs/star_arrow_svg.vue'
+  import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+
+  // lottie.loadAnimation({
+  //   container: document.getElementById('animation'),
+  //   renderer: 'svg',
+  //   loop: true,
+  //   autoplay: true,
+  //   path: '../../public/res/videos/home_blur.json' // Remplace par le chemin vers ton fichier JSON exporté
+  // });
 </script>
 
 <template>
   <main>
     <div id="top">
+      <DotLottieVue style="height: 100vh; width: 100vw" autoplay loop src="/res/videos/home.json" />
       <div class="container">
 
-        <video autoplay muted loop speed="5" id="bg-video">
+        <!-- <video autoplay muted loop speed="5" id="bg-video">
           <source src="/res/videos/bg.mp4" type="video/mp4">
-        </video>
+        </video> -->
 
         <h1 class="main-title">
           <span class="top">Je développe</span>

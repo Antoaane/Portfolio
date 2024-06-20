@@ -4,7 +4,8 @@
     position : relative;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     video {
         position: absolute;
@@ -13,6 +14,12 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
+    }
+
+    #animation {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
     }
 
     .main-title {
