@@ -1,0 +1,59 @@
+<svg height="2160" inkscape:export-xdpi="96" inkscape:export-ydpi="96" style="fill:none;stroke:none;" version="1.1" viewBox="0 0 3840 2160" width="3840" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Composition 1</title>
+    <defs>
+        <mask id="clip_Layer_e3e469a7e4be4017bf605b887885b3da" mask-type="alpha">
+            <g fill="#ffffff" fill-opacity="1" id="Fill_2a0f6634594b4c1ea1521d8193b42f37" inkscape:label="Clip 2" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <path d="M -364,828.001 C -896.258,1000.09 -866.207,2021.76 -372.002,2504.01 124,2988 2064.38,2982.69 2130.06,2551.49 2222.06,1947.49 1398.62,2286.48 1416,2020 1428,1836 2497.75,2024.8 2449.2,1447.94 2415.2,1043.94 1622.61,1099.2 1142.61,1287.2 764.229,1435.4 358.38,1815.93 154.38,1473.94 25.07,1257.15 168,656 -364,828.001 Z" sodipodi:nodetypes="ccccccc" style="stroke:none;">
+                    <animate attributeName="d" begin="0.000000" calcMode="spline" dur="13.046380" keySplines="0 0 1 1; 0.729000 0.000000 0.237000 0.608000; 0.750000 0.376000 0.277000 0.603000; 0.770000 0.397000 0.252000 1.000000; 0.000000 0.000000 0.000000 0.000000" keyTimes="0; 0.076726; 0.383632; 0.687979; 1.000000; 1" repeatCount="indefinite"/>
+                </path>
+            </g>
+        </mask>
+        <mask id="clip_Layer_96595466ba7f42b28722560ae0618f2d" mask-type="alpha">
+            <g fill="#ffffff" fill-opacity="1" id="Fill_10b73aae3a454ba2941098ddb7c394b7" inkscape:label="Clip 1" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <path d="M 3749.64,47.583 C 3649.83,156.2 3635.4,803.54 3225.27,1417.01 3000.46,1762.79 2291.13,2011.19 1867.13,2179.19 1221.34,2435.06 4044,3124 4120,2168 4196.01,1212 3885.64,-100.417 3749.64,47.583 Z" sodipodi:nodetypes="cccc" style="stroke:none;">
+                    <animate attributeName="d" begin="0.000000" calcMode="spline" dur="13.046380" keySplines="0 0 1 1; 0.762000 0.000000 0.282000 0.642000; 0.745000 0.373000 0.259000 0.631000; 0.753000 0.377000 0.251000 1.000000; 0.000000 0.000000 0.000000 0.000000" keyTimes="0; 0.035806; 0.345269; 0.652174; 0.959079; 1" repeatCount="indefinite"/>
+                </path>
+            </g>
+        </mask>
+        <mask id="clip_Layer_ed4fe5cf81d041d69131b7b939865c74" mask-type="alpha">
+            <g fill="#ffffff" fill-opacity="1" id="Fill_c13b5586ff994563ba7c88a2034d9e0b" inkscape:label="Clip" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <path d="M 1824.46,-419.001 C 1510.39,-431.116 438.029,-511.8 78,-260 -248,-32 -286.07,723.973 -29.798,523.314 280,280.746 1121.4,299.087 1539.27,318.545 2219.71,348.327 3329.91,1132.26 3429.52,968.302 3645.06,613.506 2136.74,-407.737 1824.46,-419.001 Z" sodipodi:nodetypes="ccccc" style="stroke:none;">
+                    <animate attributeName="d" begin="0.000000" calcMode="spline" dur="13.046380" keySplines="0.747000 0.000000 0.261000 0.654000; 0.753000 0.349000 0.271000 0.662000; 0.778000 0.361000 0.276000 1.000000; 0.000000 0.000000 0.000000 0.000000" keyTimes="0.000000; 0.306905; 0.611253; 0.918159; 1" repeatCount="indefinite"/>
+                </path>
+            </g>
+        </mask>
+    </defs>
+    <sodipodi:namedview bordercolor="#666666" borderlayer="true" inkscape:document-units="px" inkscape:pagecheckerboard="true" pagecolor="#ffffff"/>
+    <metadata>
+        <rdf:RDF>
+            <cc:Work>
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/MovingImage"/>
+                <dc:title>Composition 1</dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g id="Composition_a40bae7883b74f6d8add70b8776b1db8" inkscape:groupmode="layer" inkscape:label="Composition 1">
+        <g fill="#ffa800" fill-opacity="1" id="Fill_1d6d610ffa5946e7b9dde51180a6960d" inkscape:groupmode="layer" inkscape:label="fond" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <rect height="2160" ry="0" style="stroke:none;" width="3840" x="0" y="0"/>
+        </g>
+        <g id="Layer_e3e469a7e4be4017bf605b887885b3da" inkscape:groupmode="layer" inkscape:label="gauche" mask="url(#clip_Layer_e3e469a7e4be4017bf605b887885b3da)" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <g fill="#5200ff" fill-opacity="1" id="Fill_57d87690edb6486e9475f131c6f784f4" inkscape:groupmode="layer" inkscape:label="gauche" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <rect height="2160" ry="0" style="stroke:none;" width="3840" x="0" y="0"/>
+            </g>
+        </g>
+        <g id="Layer_96595466ba7f42b28722560ae0618f2d" inkscape:groupmode="layer" inkscape:label="right" mask="url(#clip_Layer_96595466ba7f42b28722560ae0618f2d)" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <g fill="#ff1d53" fill-opacity="1" id="Fill_863be099801b4fd2886db1e575aabc61" inkscape:groupmode="layer" inkscape:label="right" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <rect height="2160" ry="0" style="stroke:none;" width="3840" x="0" y="0"/>
+            </g>
+        </g>
+        <g id="Layer_ed4fe5cf81d041d69131b7b939865c74" inkscape:groupmode="layer" inkscape:label="top" mask="url(#clip_Layer_ed4fe5cf81d041d69131b7b939865c74)" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <g fill="#78ff38" fill-opacity="1" id="Fill_5609750f792949dfb0bb158bd4d7eb2d" inkscape:groupmode="layer" inkscape:label="top" opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <rect height="2160" ry="0" style="stroke:none;" width="3840" x="0" y="0"/>
+            </g>
+        </g>
+        <g fill="#ffffff" fill-opacity="1" id="Fill_16604e596333478b90587a29ef8fa2e4" inkscape:groupmode="layer" inkscape:label="filtre blanc" opacity="0.15000000596046448" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <rect height="2160" ry="0" style="stroke:none;" width="3840" x="0" y="0"/>
+        </g>
+    </g>
+</svg>

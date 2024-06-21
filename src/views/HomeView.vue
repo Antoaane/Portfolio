@@ -15,12 +15,8 @@
 <template>
   <main>
     <div id="top">
-      <DotLottieVue style="height: 100vh; width: 100vw" autoplay loop src="/res/videos/home.json" />
+      <!-- <DotLottieVue style="height: 100vh; width: 100vw" autoplay loop src="/res/videos/home.lottie" /> -->
       <div class="container">
-
-        <!-- <video autoplay muted loop speed="5" id="bg-video">
-          <source src="/res/videos/bg.mp4" type="video/mp4">
-        </video> -->
 
         <h1 class="main-title">
           <span class="top">Je développe</span>
