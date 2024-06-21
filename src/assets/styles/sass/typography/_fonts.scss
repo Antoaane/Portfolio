@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 @font-face {
     font-family: 'Iquost';
     src: url('/res/fonts/iquost.otf');
-    font-weight: 600;
+}
+
+* {
+    font-family: "Lexend", sans-serif;
 }

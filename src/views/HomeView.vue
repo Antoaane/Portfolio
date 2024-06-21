@@ -1,7 +1,7 @@
 <script setup>
   import star_1_svg from '../components/SVGs/star_1_svg.vue'
   import star_arrow_svg from '../components/SVGs/star_arrow_svg.vue'
-  import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
+  // import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
 
   // lottie.loadAnimation({
   //   container: document.getElementById('animation'),
@@ -16,18 +16,23 @@
   <main>
     <div id="top">
       <!-- <DotLottieVue style="height: 100vh; width: 100vw" autoplay loop src="/res/videos/home.lottie" /> -->
-      <div class="container">
+      <img src="/res/images/bg.svg" alt="background">
 
-        <h1 class="main-title">
-          <span class="top">Je développe</span>
-          <span class="bot">
-            <star_1_svg /> vos projets
-          </span>
-        </h1>
-        
-        <star_arrow_svg />
+      <div class="filters">
+        <div class="container">
 
+          <h1 class="main-title">
+            <span class="top">Je développe</span>
+            <span class="bot">
+              <star_1_svg /> vos projets
+            </span>
+          </h1>
+          
+          <star_arrow_svg />
+
+        </div>
       </div>
+      
     </div>
     <div id="dscription">
       <p>

@@ -1,17 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @font-face {
   font-family: "Iquost";
   src: url("/res/fonts/iquost.otf");
-  font-weight: 600;
 }
+* {
+  font-family: "Lexend", sans-serif;
+}
+
 .main-title {
   font-size: 12rem;
   font-family: "Iquost";
   margin-bottom: 1rem;
   color: #FFFDF7;
 }
+.main-title > span {
+  font-family: "Iquost";
+}
 
 .font-alt {
   font-feature-settings: "salt" 1;
+}
+
+.underline-wave {
+  text-decoration: none;
+  position: relative;
+}
+.underline-wave::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: url("/res/pictos/wave.svg") repeat-x;
+  background-size: 12.5px;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
 }
 
 header {
@@ -19,6 +42,38 @@ header {
   position: absolute;
   inset: 0;
   z-index: 999;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav a {
+  height: min-content;
+  margin: 0 2rem;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 1.15rem;
+  transition: all 1s ease;
+}
+header nav a::after {
+  transition: all 1s ease;
+}
+header nav a:hover {
+  transform: translateY(-5px);
+}
+header nav a:hover::after {
+  transform: translateY(5px);
+  background-position: 50px 0;
+}
+@keyframes waving {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 footer p {
@@ -31,59 +86,69 @@ footer p {
 
 #top {
   height: 100vh;
-  padding-bottom: 5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-#top video {
+#top img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
 }
-#top #animation {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
+#top .filters {
+  height: 100%;
+  padding-bottom: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(150px);
 }
-#top .main-title {
+#top .filters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/res/images/grain.png");
+  background-size: 360px 202.5px;
+}
+#top .filters .main-title {
   width: 100%;
   padding: 0 3rem;
   line-height: 1.15;
 }
-#top .main-title .top {
+#top .filters .main-title .top {
   width: max-content;
   margin-right: auto;
   margin-left: 0;
   position: relative;
   display: block;
 }
-#top .main-title .top::after {
+#top .filters .main-title .top::after {
   content: "_";
   position: absolute;
   right: -7.5rem;
   transform: scaleX(150%);
 }
-#top .main-title .bot {
+#top .filters .main-title .bot {
   width: max-content;
   margin-right: 0;
   margin-left: auto;
   display: flex;
 }
-#top .main-title .bot svg {
+#top .filters .main-title .bot svg {
   margin-right: 7rem;
 }
-#top .star_arrow_svg {
+#top .filters .star_arrow_svg {
   position: absolute;
   bottom: 7vh;
   left: 50%;
   transform: translateX(-50%);
 }
-#top .star_arrow_svg > path {
+#top .filters .star_arrow_svg > path {
   animation: arrow_star_spin 30s linear infinite;
   transform-origin: center;
 }

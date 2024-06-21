@@ -3,6 +3,10 @@
     font-family: 'Iquost';
     margin-bottom: 1rem;
     color : $primary;
+
+    &>span {
+        font-family: 'Iquost';
+    }
 }
 
 .font-alt {

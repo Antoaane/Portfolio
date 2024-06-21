@@ -4,4 +4,46 @@ header {
     position: absolute;
     inset: 0;
     z-index: 999;
+
+    nav {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        a {
+            height: min-content;
+            margin: 0 2rem;
+
+            color: white;
+            letter-spacing: 0.5px;
+            font-size: 1.15rem;
+
+            transition: all 1s ease;
+
+            &::after {
+                transition: all 1s ease;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+
+                &::after {
+                    transform: translateY(5px);
+                    background-position: 50px 0;
+                    // animation: waving 10s infinite linear;
+                }
+            }
+
+            @keyframes waving {
+                0% {
+                    background-position: 0 0;
+                }
+                100% {
+                    background-position: 100% 0;
+                }
+            }
+        }
+    }
 }
