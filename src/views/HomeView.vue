@@ -1,6 +1,6 @@
 <script setup>
   import star_1_svg from '../components/SVGs/star_1_svg.vue'
-  import star_arrow_svg from '../components/SVGs/star_arrow_svg.vue'
+  import arrow_down_svg from '../components/SVGs/arrow_down_svg.vue'
   // import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
 
   // lottie.loadAnimation({
@@ -15,8 +15,14 @@
 <template>
   <main>
     <div id="top">
-      <!-- <DotLottieVue style="height: 100vh; width: 100vw" autoplay loop src="/res/videos/home.lottie" /> -->
+
       <img src="/res/images/bg.svg" alt="background">
+
+      <div class="container">
+        <div>
+          <img src="/res/images/menu_visibility.svg" alt="arrière plan menu">
+        </div>
+      </div>
 
       <div class="filters">
         <div class="container">
@@ -28,17 +34,47 @@
             </span>
           </h1>
           
-          <star_arrow_svg />
+          <a href="#competences">
+            <div>
+              <arrow_down_svg />
+            </div>
+          </a>
 
         </div>
       </div>
       
     </div>
-    <div id="dscription">
-      <p>
-        Je suis un développeur web et mobile basé à Paris. Je suis passionné par la création de sites web et d'applications mobiles. Je suis spécialisé dans le développement front-end et back-end. Je suis également un passionné de nouvelles technologies et de design.
-        <br><br><br><br><br><br><br><br><br><br><br>
-      </p>
+    <div id="competences">
+      <div class="container grid grid-cols-12">
+        <div class="text col-span-5">
+          <h2 class="h2">
+            Votre site <span>w</span>eb <br>
+            sur mes<span>u</span>re
+          </h2>
+          <p>
+            Site e-commerce, vitrine en ligne, blog personnel ou encore bien plus encor. Je m'adapte à vos besoins et vos envies pour faire naître votre vision ! Et si vous n'avez pas d'idée encore précises je vous aide à préparer et structurer le projet qui vous correspond.
+            <br><br>
+            Mes compétences permettent de collaborer ensemble pour que votre produit soit le plus personnalisé possible. La certification Opquast atteste de mon engagement à respecter les meilleures pratiques web et à fournir des sites web de qualité, accessibles et performants.
+          </p>
+        </div>
+        <div class="illustration col-span-7">
+          <img src="/res/images/illustration_competences.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="realisations">
+      <div class="container grid grid-cols-12">
+        <div class="text col-span-6">
+          <h2 class="h2">
+            Mes <span>r</span>éalisations
+          </h2>
+          <p>
+            Découvrez mes dernières réalisations et projets en cours. Chaque projet est unique et réalisé sur mesure pour répondre aux besoins de mes clients. Vous pouvez consulter les détails de chaque projet et voir les technologies utilisées.
+          </p>
+        </div>
+        <div class="illustration col-span-6">
+        </div>
+      </div>
     </div>
   </main>
 </template>

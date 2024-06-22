@@ -7,6 +7,10 @@
   font-family: "Lexend", sans-serif;
 }
 
+.font-alt {
+  font-feature-settings: "salt" 1;
+}
+
 .main-title {
   font-size: 12rem;
   font-family: "Iquost";
@@ -17,7 +21,16 @@
   font-family: "Iquost";
 }
 
-.font-alt {
+.h2 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-family: "Iquost";
+  color: #FFFDF7;
+  line-height: 1.2;
+  color: #4E485F;
+}
+.h2 span {
+  font-family: "Iquost";
   font-feature-settings: "salt" 1;
 }
 
@@ -45,6 +58,7 @@ header {
 }
 header nav {
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -55,29 +69,25 @@ header nav a {
   color: white;
   letter-spacing: 0.5px;
   font-size: 1.15rem;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
 header nav a::after {
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
 header nav a:hover {
   transform: translateY(-5px);
 }
 header nav a:hover::after {
   transform: translateY(5px);
-  background-position: 50px 0;
-}
-@keyframes waving {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
+  background-position: 30px 0;
 }
 
 footer p {
   color: #4E485F;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -86,15 +96,37 @@ footer p {
 
 #top {
   height: 100vh;
+  position: relative;
 }
-#top img {
+#top > img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+#top > .container {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: end;
+}
+#top > .container > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#top > .container > div > img {
+  width: 70%;
+  position: absolute;
+  top: -25%;
+  right: -12.5%;
 }
 #top .filters {
   height: 100%;
@@ -115,51 +147,96 @@ footer p {
   background-image: url("/res/images/grain.png");
   background-size: 360px 202.5px;
 }
-#top .filters .main-title {
+#top .filters .container .main-title {
   width: 100%;
   padding: 0 3rem;
   line-height: 1.15;
 }
-#top .filters .main-title .top {
+#top .filters .container .main-title .star_1_svg {
+  transform: scale(0.9);
+}
+#top .filters .container .main-title .top {
   width: max-content;
   margin-right: auto;
   margin-left: 0;
   position: relative;
   display: block;
 }
-#top .filters .main-title .top::after {
+#top .filters .container .main-title .top::after {
   content: "_";
   position: absolute;
   right: -7.5rem;
   transform: scaleX(150%);
 }
-#top .filters .main-title .bot {
+#top .filters .container .main-title .bot {
   width: max-content;
   margin-right: 0;
   margin-left: auto;
   display: flex;
 }
-#top .filters .main-title .bot svg {
-  margin-right: 7rem;
+#top .filters .container .main-title .bot svg {
+  margin-right: 6rem;
 }
-#top .filters .star_arrow_svg {
+#top .filters .container > a {
+  width: 150px;
+  height: 150px;
   position: absolute;
   bottom: 7vh;
   left: 50%;
   transform: translateX(-50%);
 }
-#top .filters .star_arrow_svg > path {
-  animation: arrow_star_spin 30s linear infinite;
+#top .filters .container > a > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#top .filters .container > a > div .arrow_down_svg {
+  transition: all 0.3s ease;
+}
+#top .filters .container > a > div::after {
+  content: url("/res/pictos/star_borders.svg");
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  animation: star_spin 30s linear infinite;
   transform-origin: center;
 }
+#top .filters .container > a:hover > div {
+  transform: scale(1.25);
+}
+#top .filters .container > a:hover > div > .arrow_down_svg {
+  transform: scale(0.8);
+}
 
-@keyframes arrow_star_spin {
+@keyframes star_spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
+}
+#competences .container {
+  height: 100vh;
+}
+#competences .container .text {
+  padding-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #4E485F;
+}
+#competences .container .illustration {
+  padding-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -8,6 +8,8 @@ header {
     nav {
         height: 100%;
 
+        position: relative;
+
         display: flex;
         align-items: center;
         justify-content: end;
@@ -20,10 +22,10 @@ header {
             letter-spacing: 0.5px;
             font-size: 1.15rem;
 
-            transition: all 1s ease;
+            transition: all 0.3s ease;
 
             &::after {
-                transition: all 1s ease;
+                transition: all 0.3s ease;
             }
 
             &:hover {
@@ -31,17 +33,7 @@ header {
 
                 &::after {
                     transform: translateY(5px);
-                    background-position: 50px 0;
-                    // animation: waving 10s infinite linear;
-                }
-            }
-
-            @keyframes waving {
-                0% {
-                    background-position: 0 0;
-                }
-                100% {
-                    background-position: 100% 0;
+                    background-position: 30px 0;
                 }
             }
         }

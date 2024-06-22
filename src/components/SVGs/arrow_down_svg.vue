@@ -1,0 +1,11 @@
+<template>
+    <svg class="arrow_down_svg" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_757_131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="70" height="70">
+            <rect width="70" height="70" fill="#FFFDF7"/>
+        </mask>
+        <g mask="url(#mask0_757_131)">
+            <path d="M31.2188 9.18747V43.1666L16.4896 28.4375L10 35L35.8125 60.8125L61.625 35L55.1354 28.4375L40.4063 43.1666V9.18747H31.2188Z" fill="#FFFDF7"/>
+        </g>
+    </svg>
+</template>
+    
