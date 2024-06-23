@@ -8,8 +8,13 @@
 
 body {
     overflow-x: hidden;
+    background-color: $primary;
 }
 
 .container {
     margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }

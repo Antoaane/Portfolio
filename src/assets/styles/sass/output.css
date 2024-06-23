@@ -22,7 +22,6 @@
 }
 
 .h2 {
-  margin-bottom: 2rem;
   font-size: 3.5rem;
   font-family: "Iquost";
   color: #FFFDF7;
@@ -88,10 +87,15 @@ footer p {
 
 body {
   overflow-x: hidden;
+  background-color: #FFFDF7;
 }
 
 .container {
   margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #top {
@@ -232,11 +236,33 @@ body {
   justify-content: center;
   color: #4E485F;
 }
+#competences .container .text .h2 {
+  margin-bottom: 2rem;
+}
 #competences .container .illustration {
   padding-left: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#realisations .title-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#realisations .title-container .h2 {
+  margin: 0 2.5rem;
+}
+#realisations .title-container .waves {
+  display: flex;
+  align-items: center;
+}
+#realisations .title-container .waves .wave_extended_svg {
+  width: 100px;
+}
+#realisations .title-container .waves:nth-child(3) {
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=output.css.map */

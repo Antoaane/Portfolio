@@ -179,6 +179,10 @@
             justify-content: center;
 
             color: $accent;
+
+            .h2 {
+                margin-bottom: 2rem;
+            }
         }
 
         .illustration {
@@ -187,6 +191,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+
+#realisations {
+
+    .title-container {
+        margin-bottom: 2rem;
+
+        display: flex;
+        justify-content: center;
+
+        .h2 {
+            margin: 0 2.5rem;
+        }
+
+        .waves {
+            display: flex;
+            align-items: center;
+            
+            .wave_extended_svg {
+                width: 100px;
+            }
+        }
+
+        .waves:nth-child(3) {
+            transform: scaleX(-1);
         }
     }
 }
