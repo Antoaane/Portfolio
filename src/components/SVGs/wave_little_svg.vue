@@ -1,0 +1,15 @@
+<template>
+    <svg class="wave_little_svg" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 105.9 26.3" style="enable-background:new 0 0 105.9 26.3;" xml:space="preserve" overflow="visible">
+        <path class="st0" d="M106.3,13.1c-7.3,10.3-19.2,10.3-26.6,0c-7.3-10.3-19.2-10.3-26.6,0c-7.3,10.3-19.2,10.3-26.6,0
+        C19.2,2.8,7.3,2.8,0,13.1"/>
+    </svg>
+</template>
+
+<style scoped>
+    .st0 {
+        fill:none;
+        stroke:#4E485F;
+        stroke-width:10;
+        stroke-miterlimit:10;
+    }
+</style>

@@ -384,4 +384,44 @@ html {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+#qui-suis-je {
+  height: 100vh;
+}
+#qui-suis-je .content {
+  padding-right: 4rem;
+}
+#qui-suis-je .content .h2 {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  color: #4E485F;
+}
+#qui-suis-je .content .h2 > .wave_little_svg {
+  width: 70px;
+  margin-right: 1rem;
+}
+#qui-suis-je .content p {
+  color: #4E485F;
+}
+#qui-suis-je .image {
+  padding-left: 4rem;
+  position: relative;
+}
+#qui-suis-je .image .star_svg {
+  position: absolute;
+  top: -5rem;
+  right: -3rem;
+  transform: scale(0.75);
+}
+#qui-suis-je .image .star_svg path {
+  fill: #4E485F;
+}
+#qui-suis-je .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: #fffaea solid 15px;
+  border-radius: 4rem;
+}
+
 /*# sourceMappingURL=output.css.map */

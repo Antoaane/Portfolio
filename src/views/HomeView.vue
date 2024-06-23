@@ -1,9 +1,9 @@
 <script setup>
-  import star_1_svg from '../components/SVGs/star_1_svg.vue'
+  import star_svg from '../components/SVGs/star_svg.vue'
   import arrow_down_svg from '../components/SVGs/arrow_down_svg.vue'
   import wave_extended_svg from '../components/SVGs/wave_extended_svg.vue'
   import star_little_svg from '../components/SVGs/star_little_svg.vue'
-  import bg_innerwav_svg from '../components/SVGs/bg_innerwav_svg.vue'
+  import wave_little_svg from '../components/SVGs/wave_little_svg.vue'
 </script>
 
 <template>
@@ -24,7 +24,7 @@
           <h1 class="main-title">
             <span class="top">Je développe</span>
             <span class="bot">
-              <star_1_svg /> vos projets
+              <star_svg /> vos projets
             </span>
           </h1>
           
@@ -162,6 +162,28 @@
           <img class="_zetruc" src="/res/images/zetruc2.jpg" alt="">
           <div class="line"></div>
           <img class="_zetruc" src="/res/images/zetruc3.jpg" alt="">
+        </div>
+
+      </div>
+
+      <div id="qui-suis-je" class="container grid grid-cols-12 items-center">
+        
+        <div class="content col-span-6">
+          <h2 class="h2">
+            <wave_little_svg /> Qui suis-je ?
+          </h2>
+          <p>
+            Je suis Antoine Lauzis, un développeur web passionné et diplômé originaire de Guadeloupe, actuellement basé à Troyes. C’est assez tôt, lors de mes premières années de lycée, que mon intérêt pour les technologies du web à émergé et est devenu une passion qui ne m’a pas lâché depuis. J’ai donc poursuivi mes études sur la préparation d’un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l’Internet (BUT MMI) en parcours développement web. 
+            <br><br>
+            Ce cursus de 3 ans m’a permis d’acquérir des bases très solides dans ce domaine et m’a rendu très polyvalent notamment grâce à l’apprentissage et la maîtrise de nombreux logiciels créatifs (Figma, Illustrator, After Effect, Premiere pro, etc). C’est cependant sur le terrain, lors de mon expérience de 2 ans en entreprise que j’ai pu acquérir les connaissance et maîtrisé les technologies qui font de moi un développeur aguerri.
+            <br><br>
+            Aujourd'hui, je suis en quête des prochains projets qui me feront évoluer en tant que développeur et qui mettront à l’épreuve mes compétence. Je cherche jours après jours, projets après projets à acquérir de nouvelles connaissances et à faire grandir mon expérience. 
+          </p>
+        </div>
+
+        <div class="image col-span-6">
+          <star_svg />
+          <img src="\res\images\profile.jpg" alt="">
         </div>
 
       </div>

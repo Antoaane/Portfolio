@@ -1,19 +1,5 @@
-<script setup>
-    const props = defineProps({
-        class : {
-            type: String,
-            default: ''
-        },
-        color : {
-            type: String,
-            default: 'black'
-        }
-    })
-
-</script>
-
 <template>
-    <svg class="star_1_svg" width="238" height="240" viewBox="0 0 238 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="star_svg" width="238" height="240" viewBox="0 0 238 240" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path 
             d="M119 0L102.33 25.4585L77.9576 7.23689L71 36.8616L41.8655 28.0747L45.4597 58.2924L15.077 60L28.7895 87.1661L0.823059 99.1622L23 120L0.823059 140.838L28.7895 152.834L15.077 180L45.4597 181.708L41.8655 211.925L71 203.138L77.9576 232.763L102.33 214.542L119 240L135.67 214.542L160.042 232.763L167 203.138L196.135 211.925L192.54 181.708L222.923 180L209.21 152.834L237.177 140.838L215 120L237.177 99.1622L209.21 87.1661L222.923 60L192.54 58.2924L196.135 28.0747L167 36.8616L160.042 7.23689L135.67 25.4585L119 0Z" 
             fill="#FFFDF7"
@@ -21,3 +7,6 @@
     </svg>
 </template>
     
+<script setup>
+
+</script>
