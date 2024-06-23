@@ -226,8 +226,8 @@
         padding: 2rem;
         margin-bottom: 2.5rem;
 
-        &._first {
-            outline: 10px solid $accent;
+        &._borders {
+            border: 10px solid $accent;
             border-radius: calc($r-xl + 2rem);
         }
 
@@ -240,11 +240,44 @@
             .realisation {
                 height: 100%;
                 border-radius: $r-xl;
+
+                @include shadow;
+            }
+
+            &>.multiple-imgs {
+                display: flex;
+                align-items: center;
+
+                .line {
+                    width: 5px;
+                    height: 60px;
+
+                    margin: 0 1rem;
+
+                    background-color: $accent;
+                    border-radius: $r-full;
+                }
+                
+                &>img {
+                    height: 100%;
+                    border-radius: $r-md;
+
+                    @include shadow;
+                }
+
+                &._borders {
+                    border: 10px solid $accent;
+                    padding: 1rem;
+    
+                    @include shadow;
+                }
             }
 
             .star_little_svg {
                 width: 50px;
                 margin: 0 1.5rem;
+
+                animation: star_spin 10s linear infinite;
             }
 
             .description {
@@ -252,8 +285,28 @@
                 position: relative;
                 flex-grow: 1;
 
+                @include shadow;
+
                 &._innerwav {
                     background-image: url('/res/images/bg_innerwav.svg');
+                    background-size: cover;
+                    border-radius: $r-xl;
+                }
+
+                &._la-renaissance {
+                    background-image: url('/res/images/bg_la_renaissance.svg');
+                    background-size: cover;
+                    border-radius: $r-xl;
+                }
+
+                &._initial-expertise {
+                    background-image: url('/res/images/bg_initial_expertise.svg');
+                    background-size: cover;
+                    border-radius: $r-xl;
+                }
+
+                &._zetruc {
+                    background-image: url('/res/images/bg_zetruc.svg');
                     background-size: cover;
                     border-radius: $r-xl;
                 }
@@ -269,7 +322,7 @@
 
                     background-image: url('/res/images/grain.png');
                     background-size: 360px 202.5px;
-                    backdrop-filter: blur(150px);
+                    backdrop-filter: blur(75px);
                     border-radius: $r-xl;
                 }
 
@@ -290,10 +343,15 @@
                     .h3 {
                         color: $primary;
                         margin-bottom: 1rem;
+                        text-align: center;
+
+                        @include text-shadow;
                     }
 
                     p {
                         color: $primary;
+
+                        @include text-shadow;
                     }
                 }
             }

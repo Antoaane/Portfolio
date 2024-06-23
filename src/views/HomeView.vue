@@ -82,7 +82,7 @@
 
       </div>
 
-      <div class="container _realisations _first">
+      <div class="container _realisations _borders">
 
         <img class="realisation _innerwav" src="/res/images/innerwav.jpg" alt="">
 
@@ -105,25 +105,67 @@
 
       <div class="container _realisations">
 
-        <div class="description _innerwav">
+        <div class="description _la-renaissance">
           <div class="content">
-            <h3 class="h3">Inner<span>w</span>av</h3>
+            <h3 class="h3">La Ren<span>a</span>issance</h3>
             <p>
-              Site web de vente de prestation de mastering audio personnalisé. Présentation avant/après des projet de mastering déjà réalisés. 
+              Site vitrine pour l'imprimerie La Renaissance à Troyes. Présentation des services proposés par l'imprimerie et des réalisations déjà effectuées.
               <br><br>
-              Création des commandes laissant le choix au client de définir son projet et de choisir les options de mastering qu'il souhaite appliquer. 
-              <br><br>
-              Propose un espace client pour suivre l'avancement des commandes et émettre un certain nombre de retours si besoin.
+              Site web 100% administrable par le client. Possibilité de modifier les textes, les images et titres des différentes sections du site.
             </p>
           </div>
         </div>
 
         <star_little_svg />
 
-        <img class="realisation _innerwav" src="/res/images/la_renaissance.jpg" alt="">
+        <img class="realisation _la-renaissance" src="/res/images/la_renaissance.jpg" alt="">
 
       </div>
-      
+
+      <div class="container _realisations">
+
+        <img class="realisation _initial-expertise" src="/res/images/bg_initial_expertise.jpg" alt="">
+
+        <star_little_svg />
+
+        <div class="description _initial-expertise">
+          <div class="content">
+            <h3 class="h3">INITIAL Expe<span>r</span>tise</h3>
+            <p>
+              Site vitrine pour l'imprimerie La Renaissance à Troyes. Présentation des services proposés par l'imprimerie et des réalisations déjà effectuées.
+              <br><br>
+              Site web 100% administrable par le client. Possibilité de modifier les textes, les images et titres des différentes sections du site.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container _realisations">
+
+        <div class="description _zetruc">
+          <div class="content">
+            <h3 class="h3">App <span>m</span>obile Zetruc</h3>
+            <p>
+              Site vitrine pour l'imprimerie La Renaissance à Troyes. Présentation des services proposés par l'imprimerie et des réalisations déjà effectuées.
+              <br><br>
+              Site web 100% administrable par le client. Possibilité de modifier les textes, les images et titres des différentes sections du site.
+            </p>
+          </div>
+        </div>
+
+        <star_little_svg />
+
+        <div class="multiple-imgs realisation _borders">
+          <img class="_zetruc" src="/res/images/zetruc1.jpg" alt="">
+          <div class="line"></div>
+          <img class="_zetruc" src="/res/images/zetruc2.jpg" alt="">
+          <div class="line"></div>
+          <img class="_zetruc" src="/res/images/zetruc3.jpg" alt="">
+        </div>
+
+      </div>
+
     </div>
   </main>
 </template>

@@ -279,8 +279,8 @@ html {
   padding: 2rem;
   margin-bottom: 2.5rem;
 }
-#realisations .container._first {
-  outline: 10px solid #4E485F;
+#realisations .container._borders {
+  border: 10px solid #4E485F;
   border-radius: 4rem;
 }
 #realisations .container._realisations {
@@ -291,18 +291,61 @@ html {
 #realisations .container._realisations .realisation {
   height: 100%;
   border-radius: 2rem;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+#realisations .container._realisations > .multiple-imgs {
+  display: flex;
+  align-items: center;
+}
+#realisations .container._realisations > .multiple-imgs .line {
+  width: 5px;
+  height: 60px;
+  margin: 0 1rem;
+  background-color: #4E485F;
+  border-radius: 9999px;
+}
+#realisations .container._realisations > .multiple-imgs > img {
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+#realisations .container._realisations > .multiple-imgs._borders {
+  border: 10px solid #4E485F;
+  padding: 1rem;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 #realisations .container._realisations .star_little_svg {
   width: 50px;
   margin: 0 1.5rem;
+  animation: star_spin 10s linear infinite;
 }
 #realisations .container._realisations .description {
   height: 100%;
   position: relative;
   flex-grow: 1;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 #realisations .container._realisations .description._innerwav {
   background-image: url("/res/images/bg_innerwav.svg");
+  background-size: cover;
+  border-radius: 2rem;
+}
+#realisations .container._realisations .description._la-renaissance {
+  background-image: url("/res/images/bg_la_renaissance.svg");
+  background-size: cover;
+  border-radius: 2rem;
+}
+#realisations .container._realisations .description._initial-expertise {
+  background-image: url("/res/images/bg_initial_expertise.svg");
+  background-size: cover;
+  border-radius: 2rem;
+}
+#realisations .container._realisations .description._zetruc {
+  background-image: url("/res/images/bg_zetruc.svg");
   background-size: cover;
   border-radius: 2rem;
 }
@@ -315,7 +358,7 @@ html {
   left: 0;
   background-image: url("/res/images/grain.png");
   background-size: 360px 202.5px;
-  backdrop-filter: blur(150px);
+  backdrop-filter: blur(75px);
   border-radius: 2rem;
 }
 #realisations .container._realisations .description .content {
@@ -333,9 +376,12 @@ html {
 #realisations .container._realisations .description .content .h3 {
   color: #FFFDF7;
   margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 #realisations .container._realisations .description .content p {
   color: #FFFDF7;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=output.css.map */
