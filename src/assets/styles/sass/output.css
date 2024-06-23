@@ -26,9 +26,19 @@
   font-family: "Iquost";
   color: #FFFDF7;
   line-height: 1.2;
-  color: #4E485F;
 }
 .h2 span {
+  font-family: "Iquost";
+  font-feature-settings: "salt" 1;
+}
+
+.h3 {
+  font-size: 3.25rem;
+  font-family: "Iquost";
+  color: #FFFDF7;
+  line-height: 1.2;
+}
+.h3 span {
   font-family: "Iquost";
   font-feature-settings: "salt" 1;
 }
@@ -238,6 +248,7 @@ html {
 }
 #competences .container .text .h2 {
   margin-bottom: 2rem;
+  color: #4E485F;
 }
 #competences .container .illustration {
   padding-left: 3rem;
@@ -247,12 +258,12 @@ html {
 }
 
 #realisations .title-container {
-  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
 #realisations .title-container .h2 {
   margin: 0 2.5rem;
+  color: #4E485F;
 }
 #realisations .title-container .waves {
   display: flex;
@@ -263,6 +274,68 @@ html {
 }
 #realisations .title-container .waves:nth-child(3) {
   transform: scaleX(-1);
+}
+#realisations .container {
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+#realisations .container._first {
+  outline: 10px solid #4E485F;
+  border-radius: 4rem;
+}
+#realisations .container._realisations {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+#realisations .container._realisations .realisation {
+  height: 100%;
+  border-radius: 2rem;
+}
+#realisations .container._realisations .star_little_svg {
+  width: 50px;
+  margin: 0 1.5rem;
+}
+#realisations .container._realisations .description {
+  height: 100%;
+  position: relative;
+  flex-grow: 1;
+}
+#realisations .container._realisations .description._innerwav {
+  background-image: url("/res/images/bg_innerwav.svg");
+  background-size: cover;
+  border-radius: 2rem;
+}
+#realisations .container._realisations .description::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/res/images/grain.png");
+  background-size: 360px 202.5px;
+  backdrop-filter: blur(150px);
+  border-radius: 2rem;
+}
+#realisations .container._realisations .description .content {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#realisations .container._realisations .description .content .h3 {
+  color: #FFFDF7;
+  margin-bottom: 1rem;
+}
+#realisations .container._realisations .description .content p {
+  color: #FFFDF7;
 }
 
 /*# sourceMappingURL=output.css.map */

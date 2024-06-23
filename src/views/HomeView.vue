@@ -2,6 +2,8 @@
   import star_1_svg from '../components/SVGs/star_1_svg.vue'
   import arrow_down_svg from '../components/SVGs/arrow_down_svg.vue'
   import wave_extended_svg from '../components/SVGs/wave_extended_svg.vue'
+  import star_little_svg from '../components/SVGs/star_little_svg.vue'
+  import bg_innerwav_svg from '../components/SVGs/bg_innerwav_svg.vue'
 </script>
 
 <template>
@@ -80,8 +82,46 @@
 
       </div>
 
-      <div class="real-container container">
-        
+      <div class="container _realisations _first">
+
+        <img class="realisation _innerwav" src="/res/images/innerwav.jpg" alt="">
+
+        <star_little_svg />
+
+        <div class="description _innerwav">
+          <div class="content">
+            <h3 class="h3">Inner<span>w</span>av</h3>
+            <p>
+              Site web de vente de prestation de mastering audio personnalisé. Présentation avant/après des projet de mastering déjà réalisés. 
+              <br><br>
+              Création des commandes laissant le choix au client de définir son projet et de choisir les options de mastering qu'il souhaite appliquer. 
+              <br><br>
+              Propose un espace client pour suivre l'avancement des commandes et émettre un certain nombre de retours si besoin.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container _realisations">
+
+        <div class="description _innerwav">
+          <div class="content">
+            <h3 class="h3">Inner<span>w</span>av</h3>
+            <p>
+              Site web de vente de prestation de mastering audio personnalisé. Présentation avant/après des projet de mastering déjà réalisés. 
+              <br><br>
+              Création des commandes laissant le choix au client de définir son projet et de choisir les options de mastering qu'il souhaite appliquer. 
+              <br><br>
+              Propose un espace client pour suivre l'avancement des commandes et émettre un certain nombre de retours si besoin.
+            </p>
+          </div>
+        </div>
+
+        <star_little_svg />
+
+        <img class="realisation _innerwav" src="/res/images/la_renaissance.jpg" alt="">
+
       </div>
       
     </div>

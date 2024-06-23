@@ -23,11 +23,20 @@
     color : $primary;
     line-height: 1.2;
 
-    color: $accent;
+    span {
+        font-family: 'Iquost';
+        @include font-alt;
+    }
+}
+
+.h3 {
+    font-size: 3.25rem;
+    font-family: 'Iquost';
+    color : $primary;
+    line-height: 1.2;
 
     span {
         font-family: 'Iquost';
-
         @include font-alt;
     }
 }
