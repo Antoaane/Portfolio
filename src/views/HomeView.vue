@@ -82,10 +82,22 @@
                 <div class="splide__track h-full">
                   <ul class="splide__list">
                     <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/js.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/ts.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/vue.svg" alt="">
                     </li>
                     <li class="splide__slide p-10 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full scale-125" src="/res/pictos/logos/angular.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/sass.svg" alt="">
                     </li>
                     <li class="splide__slide p-10 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/tailwind.svg" alt="">
