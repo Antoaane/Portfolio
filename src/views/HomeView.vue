@@ -1,9 +1,25 @@
 <script setup>
+  import Splide from '@splidejs/splide';
+  import { onMounted } from 'vue';
+
   import star_svg from '../components/SVGs/star_svg.vue'
   import arrow_down_svg from '../components/SVGs/arrow_down_svg.vue'
   import wave_extended_svg from '../components/SVGs/wave_extended_svg.vue'
   import star_little_svg from '../components/SVGs/star_little_svg.vue'
   import wave_little_svg from '../components/SVGs/wave_little_svg.vue'
+
+  onMounted(() => {
+    const splide = new Splide( '.splide', {
+      type   : 'loop',
+      arrows : false,
+      pagination: false,
+      autoplay: true,
+      interval: 1500,
+    } );
+
+    splide.mount();
+  });
+
 </script>
 
 <template>
@@ -57,7 +73,28 @@
         </div>
 
         <div class="illustration col-span-7">
-          <img src="/res/images/illustration_competences.png" alt="">
+          <div class="aspect-square relative flex items-center justify-center">
+            <img src="/res/images/illustration_competences.png" alt="">
+
+            <div class="w-[31.35%] h-[20%] absolute top-[35%] left-[13.25%]">
+              
+              <section class="splide w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
+                <div class="splide__track h-full">
+                  <ul class="splide__list">
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/vue.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/tailwind.svg" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
 
       </div>
