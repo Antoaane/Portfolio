@@ -196,7 +196,6 @@
     }
 }
 
-
 #realisations {
 
     .title-container {
@@ -240,8 +239,32 @@
             .realisation {
                 height: 100%;
                 border-radius: $r-xl;
+                position: relative;
 
                 @include shadow;
+
+                .innerwav {
+                    height: 100%;
+                    border-radius: $r-xl;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+
+                .innerwav-video {
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                    
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+
+                    border-radius: $r-xl;
+                }
             }
 
             &>.multiple-imgs {

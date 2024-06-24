@@ -9,15 +9,45 @@
   import wave_little_svg from '../components/SVGs/wave_little_svg.vue'
 
   onMounted(() => {
-    const splide = new Splide( '.splide', {
+    const frontEnd = new Splide( '.front-end', {
       type   : 'loop',
       arrows : false,
       pagination: false,
       autoplay: true,
       interval: 1500,
+      pauseOnHover: false,
     } );
 
-    splide.mount();
+    frontEnd.mount();
+
+    const frontStyle = new Splide( '.front-style', {
+      type   : 'loop',
+      direction: 'ttb',
+      height: '100%',
+      arrows : false,
+      pagination: false,
+      autoplay: true,
+      interval: 1500,
+      pauseOnHover: false,
+    } );
+
+    setTimeout(() => {
+      frontStyle.mount();
+    }, 100);;
+
+    const backEnd = new Splide( '.back-end', {
+      type   : 'loop',
+      direction: 'rtl',
+      arrows : false,
+      pagination: false,
+      autoplay: true,
+      interval: 1500,
+      pauseOnHover: false,
+    } );
+
+    setTimeout(() => {
+      backEnd.mount();
+    }, 200);
   });
 
 </script>
@@ -77,10 +107,12 @@
             <img src="/res/images/illustration_competences.png" alt="">
 
             <div class="w-[31.35%] h-[20%] absolute top-[35%] left-[13.25%]">
-              
-              <section class="splide w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
+              <section class="splide front-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/html.svg" alt="">
+                    </li>
                     <li class="splide__slide p-10 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/js.svg" alt="">
                     </li>
@@ -93,14 +125,44 @@
                     <li class="splide__slide p-10 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
                     </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <div class="w-[9.35%] h-[19.25%] absolute top-[19.9%] right-[25.7%] ">
+              <section class="splide front-style w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
+                <div class="splide__track h-full">
+                  <ul class="splide__list">
+                    <li class="splide__slide p-3 flex items-center justify-center">
+                      <img class="w-full" src="/res/pictos/logos/css.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-3 flex items-center justify-center">
+                      <img class="w-full" src="/res/pictos/logos/sass.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-3 flex items-center justify-center">
+                      <img class="w-full" src="/res/pictos/logos/tailwind.svg" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <div class="w-[28.35%] h-[19.25%] absolute bottom-[16.25%] right-[6.8%] ">
+              <section class="splide back-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
+                <div class="splide__track h-full">
+                  <ul class="splide__list">
                     <li class="splide__slide p-10 flex items-center justify-center">
-                      <img class="h-full scale-125" src="/res/pictos/logos/angular.svg" alt="">
+                      <img class="h-full" src="/res/pictos/logos/php.svg" alt="">
                     </li>
                     <li class="splide__slide p-10 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/sass.svg" alt="">
+                      <img class="h-full" src="/res/pictos/logos/laravel.svg" alt="">
                     </li>
                     <li class="splide__slide p-10 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/tailwind.svg" alt="">
+                      <img class="h-full" src="/res/pictos/logos/wordpress.svg" alt="">
+                    </li>
+                    <li class="splide__slide p-10 flex items-center justify-center">
+                      <img class="h-full" src="/res/pictos/logos/themosis.svg" alt="">
                     </li>
                   </ul>
                 </div>
@@ -133,7 +195,13 @@
 
       <div class="container _realisations _borders">
 
-        <img class="realisation _innerwav" src="/res/images/innerwav.jpg" alt="">
+        <div class="realisation _innerwav">
+          <video class="innerwav-video" autoplay loop muted>
+            <source src="/res/videos/innerwav.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <img class="innerwav" src="/res/images/innerwav.jpg" alt="">
+        </div>
 
         <star_little_svg />
 
@@ -222,11 +290,11 @@
             <wave_little_svg /> Qui suis-je ?
           </h2>
           <p>
-            Je suis Antoine Lauzis, un développeur web passionné et diplômé originaire de Guadeloupe, actuellement basé à Troyes. C’est assez tôt, lors de mes premières années de lycée, que mon intérêt pour les technologies du web à émergé et est devenu une passion qui ne m’a pas lâché depuis. J’ai donc poursuivi mes études sur la préparation d’un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l’Internet (BUT MMI) en parcours développement web. 
+            Je suis Antoine Lauzis, un développeur web passionné et diplômé originaire de Guadeloupe, actuellement basé à Troyes. C’est assez tôt, lors de mes premières années de lycée, que mon intérêt pour les technologies du web a émergé et est devenu une passion qui ne m’a pas lâché depuis. J’ai donc poursuivi mes études sur la préparation d’un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l’Internet (BUT MMI) en parcours développement web. 
             <br><br>
-            Ce cursus de 3 ans m’a permis d’acquérir des bases très solides dans ce domaine et m’a rendu très polyvalent notamment grâce à l’apprentissage et la maîtrise de nombreux logiciels créatifs (Figma, Illustrator, After Effect, Premiere pro, etc). C’est cependant sur le terrain, lors de mon expérience de 2 ans en entreprise que j’ai pu acquérir les connaissance et maîtrisé les technologies qui font de moi un développeur aguerri.
+            Ce cursus de trois ans m’a permis d’acquérir des bases très solides dans ce domaine, mais c'est essentiellement sur le terrain, lors de mon expérience de deux ans en entreprise, que j’ai pu acquérir les connaissances et maîtrisé les technologies qui font de moi un développeur aguerri.
             <br><br>
-            Aujourd'hui, je suis en quête des prochains projets qui me feront évoluer en tant que développeur et qui mettront à l’épreuve mes compétence. Je cherche jours après jours, projets après projets à acquérir de nouvelles connaissances et à faire grandir mon expérience. 
+            Aujourd'hui, je suis en quête des prochains projets qui me feront évoluer en tant que développeur et qui mettront à l’épreuve mes compétences. Je cherche, projets après projets, à approfondir mes connaissances et à faire grandir mon expérience. 
           </p>
         </div>
 
