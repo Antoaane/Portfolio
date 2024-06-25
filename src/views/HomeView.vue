@@ -87,9 +87,9 @@
       
     </div>
     <div id="competences">
-      <div class="container grid grid-cols-12">
+      <div class="container px-10 grid grid-cols-12">
 
-        <div class="text col-span-5">
+        <div class="text xl:col-span-5 col-span-full">
 
           <h2 class="h2">
             Votre site <span>w</span>eb <br>
@@ -104,27 +104,27 @@
 
         </div>
 
-        <div class="illustration col-span-7">
-          <div class="aspect-square relative flex items-center justify-center">
-            <img src="/res/images/illustration_competences.png" alt="">
+        <div class="illustration xl:col-span-7 col-span-full">
+          <div class="w-full aspect-square relative flex items-center justify-center">
+            <img class="w-full" src="/res/images/illustration_competences.png" alt="">
 
             <div class="w-[31.35%] h-[20%] absolute top-[35%] left-[13.25%]">
               <section class="splide front-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/html.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/js.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/ts.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/vue.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
                     </li>
                   </ul>
@@ -154,16 +154,16 @@
               <section class="splide back-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/php.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/laravel.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/wordpress.svg" alt="">
                     </li>
-                    <li class="splide__slide p-10 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/themosis.svg" alt="">
                     </li>
                   </ul>
@@ -202,7 +202,7 @@
             <source src="/res/videos/innerwav.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img class="innerwav" src="/res/images/innerwav.jpg" alt="">
+          <img class="innerwav-img" src="/res/images/innerwav.jpg" alt="">
         </div>
 
         <star_little_svg />

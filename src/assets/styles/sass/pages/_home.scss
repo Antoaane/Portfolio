@@ -208,7 +208,8 @@
 #competences {
 
     .container {
-        height: 100vh;
+        min-height: 100vh;
+        padding: 5rem 0;
     
         .text {
             padding-right: 6rem;
@@ -264,26 +265,37 @@
         padding: 2rem;
         margin-bottom: 2.5rem;
 
-        &._borders {
-            border: 10px solid $accent;
-            border-radius: calc($r-xl + 2rem);
+        @media screen and (min-width: $xl) {
+            &._borders {
+                border: 10px solid $accent;
+                border-radius: calc($r-xl + 2rem);
+            }
         }
 
         &._realisations {
-            height: 70vh;
-
             display: flex;
+            flex-direction: column;
             align-items: center;
+
+            @media screen and (min-width: $xl) {
+                height: 70vh;
+                flex-direction: row;
+            }
             
             .realisation {
-                height: 100%;
+                width: 100%;
+                @media screen and (min-width: $xl) {
+                    width: auto;
+                    height: 100%;
+                }
                 border-radius: $r-xl;
                 position: relative;
 
                 @include shadow;
 
-                .innerwav {
+                .innerwav-img {
                     height: 100%;
+                    width: 100%;
                     border-radius: $r-xl;
                     transition: all 0.3s ease;
 

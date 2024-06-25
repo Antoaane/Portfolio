@@ -81,19 +81,14 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #FFFDF7;
 }
 @media screen and (min-width: 768px) {
   header {
+    background-color: transparent;
     height: 90px;
   }
 }
-@media screen and (min-width: 768px) {
-  header {
-    background-color: none;
-  }
-}
-header .desk {
+header #desk {
   height: 100%;
   position: relative;
   display: none;
@@ -101,16 +96,16 @@ header .desk {
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  header .desk {
+  header #desk {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  header .desk {
+  header #desk {
     justify-content: end;
   }
 }
-header .desk a {
+header #desk a {
   height: min-content;
   margin: 0 2rem;
   color: white;
@@ -118,17 +113,17 @@ header .desk a {
   font-size: 1.15rem;
   transition: all 0.3s ease;
 }
-header .desk a::after {
+header #desk a::after {
   transition: all 0.3s ease;
 }
-header .desk a:hover {
+header #desk a:hover {
   transform: translateY(-5px);
 }
-header .desk a:hover::after {
+header #desk a:hover::after {
   transform: translateY(5px);
   background-position: 30px 0;
 }
-header .mobile {
+header #mobile {
   width: 100%;
   height: 100%;
   display: flex;
@@ -137,11 +132,11 @@ header .mobile {
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  header .mobile {
+  header #mobile {
     display: none;
   }
 }
-header .mobile a {
+header #mobile a {
   margin: 5vh 0;
   color: #4E485F;
   letter-spacing: 0.5px;
@@ -354,7 +349,8 @@ html {
   }
 }
 #competences .container {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 5rem 0;
 }
 #competences .container .text {
   padding-right: 6rem;
@@ -396,28 +392,43 @@ html {
   padding: 2rem;
   margin-bottom: 2.5rem;
 }
-#realisations .container._borders {
-  border: 10px solid #4E485F;
-  border-radius: 4rem;
+@media screen and (min-width: 1280px) {
+  #realisations .container._borders {
+    border: 10px solid #4E485F;
+    border-radius: 4rem;
+  }
 }
 #realisations .container._realisations {
-  height: 70vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1280px) {
+  #realisations .container._realisations {
+    height: 70vh;
+    flex-direction: row;
+  }
+}
 #realisations .container._realisations .realisation {
-  height: 100%;
+  width: 100%;
   border-radius: 2rem;
   position: relative;
   box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
-#realisations .container._realisations .realisation .innerwav {
+@media screen and (min-width: 1280px) {
+  #realisations .container._realisations .realisation {
+    width: auto;
+    height: 100%;
+  }
+}
+#realisations .container._realisations .realisation .innerwav-img {
   height: 100%;
+  width: 100%;
   border-radius: 2rem;
   transition: all 0.3s ease;
 }
-#realisations .container._realisations .realisation .innerwav:hover {
+#realisations .container._realisations .realisation .innerwav-img:hover {
   opacity: 0;
 }
 #realisations .container._realisations .realisation .innerwav-video {
