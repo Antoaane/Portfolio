@@ -42,7 +42,10 @@
 
     .filters {
         height: 100%;
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
+        @media screen and (min-width: $xl) {
+            padding-bottom: 5rem;
+        }
         position : relative;
 
         display: flex;
@@ -65,18 +68,28 @@
         .container {
 
             .main-title {
-            width: 100%;
-            padding: 0 3rem;
-            line-height: 1.15;
+                width: 100%;
+                padding: 0 3rem;
 
-                .star_1_svg {
-                    transform: scale(0.9);
+                line-height: 1.25;
+                @media screen and (min-width: $lg) {
+                    line-height: 1.8;
+                }
+                @media screen and (min-width: $xl) {
+                    line-height: 1.4;
+                }
+                @media screen and (min-width: $xxl) {
+                    line-height: 1.15;
                 }
             
                 .top {
                     width: max-content;
+                    margin-left: auto;
                     margin-right: auto;
-                    margin-left: 0;
+                    @media screen and (min-width: $lg) {
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
 
                     position: relative;
 
@@ -85,20 +98,43 @@
                     &::after {
                         content: '_';
                         position: absolute;
-                        right: -7.5rem;
+                        right: -3.5rem;
+                        @media screen and (min-width: $lg) {
+                            right: -4.5rem;
+                        }
+                        @media screen and (min-width: $xl) {
+                            right: -6rem;
+                        }
                         transform: scaleX(150%);
                     }
                 }
 
                 .bot {
                     width: max-content;
-                    margin-right: 0;
                     margin-left: auto;
+                    margin-right: auto;
+                    @media screen and (min-width: $lg) {
+                        margin-right: 0;
+                        margin-left: auto;
+                    }
 
                     display : flex;
 
-                    svg {
-                        margin-right: 6rem;
+                    .star_svg {
+                        display: none;
+                        @media screen and (min-width: $lg) {
+                            display: block;
+                            margin-right: 1rem;
+                            transform: scale(0.7);
+                        }
+                        @media screen and (min-width: $xl) {
+                            margin-right: 4rem;
+                            transform: scale(0.8);
+                        }
+                        @media screen and (min-width: $xxl) {
+                            transform: scale(0.9);
+                            margin-right: 6rem;
+                        }
                     }
                 }
             }
@@ -124,31 +160,34 @@
 
                     transition: all 0.3s ease;
 
-                    .arrow_down_svg {
-                        transition: all 0.3s ease;
-                    }
-
-                    &::after {
-                        content: url('/res/pictos/star_borders.svg');  
-                        width: 140px;
-                        height: 140px;
-
-                        position: absolute;
-                        top: 5px;
-                        left: 5px;
+                    .star_borders_svg {
+                        width: 75%;
+                        height: 75%;
                         
                         animation: star_spin 30s linear infinite;
-                        transform-origin: center;
+                        transition: all 0.5s cubic-bezier(0.80, 0, 0.20, 1) 0.1s;
+                    }
+
+                    .arrow_down_svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0.85);
+
+                        transition: all 0.3s ease;
                     }
                 }
 
                 &:hover {
-
+                    
                     &>div {
-                        transform: scale(1.25);
+                        .star_borders_svg {
+                            width: 120%;
+                            height: 120%;
+                        }
 
-                        &>.arrow_down_svg {
-                            transform: scale(0.8);
+                        .arrow_down_svg {
+                            transform: translate(-50%, -50%) scale(1);
                         }
                     }
                 }
@@ -344,7 +383,7 @@
                     left: 0;
 
                     background-image: url('/res/images/grain.png');
-                    background-size: 360px 202.5px;
+                    background-size: calc(360px / 2) calc(202.5px / 2);
                     backdrop-filter: blur(75px);
                     border-radius: $r-xl;
                 }

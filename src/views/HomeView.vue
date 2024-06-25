@@ -3,6 +3,7 @@
   import { onMounted } from 'vue';
 
   import star_svg from '../components/SVGs/star_svg.vue'
+  import star_borders_svg from '../components/SVGs/star_borders_svg.vue'
   import arrow_down_svg from '../components/SVGs/arrow_down_svg.vue'
   import wave_extended_svg from '../components/SVGs/wave_extended_svg.vue'
   import star_little_svg from '../components/SVGs/star_little_svg.vue'
@@ -76,6 +77,7 @@
           
           <a href="#competences">
             <div>
+              <star_borders_svg />
               <arrow_down_svg />
             </div>
           </a>

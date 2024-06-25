@@ -12,10 +12,25 @@
 }
 
 .main-title {
-  font-size: 12rem;
+  font-size: 6rem;
   font-family: "Iquost";
   margin-bottom: 1rem;
   color: #FFFDF7;
+}
+@media screen and (min-width: 1024px) {
+  .main-title {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-title {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .main-title {
+    font-size: 12rem;
+  }
 }
 .main-title > span {
   font-family: "Iquost";
@@ -60,19 +75,42 @@
 }
 
 header {
-  height: 90px;
-  position: absolute;
-  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999;
+  background-color: #FFFDF7;
 }
-header nav {
+@media screen and (min-width: 768px) {
+  header {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    background-color: none;
+  }
+}
+header .desk {
   height: 100%;
   position: relative;
-  display: flex;
+  display: none;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
-header nav a {
+@media screen and (min-width: 768px) {
+  header .desk {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .desk {
+    justify-content: end;
+  }
+}
+header .desk a {
   height: min-content;
   margin: 0 2rem;
   color: white;
@@ -80,15 +118,35 @@ header nav a {
   font-size: 1.15rem;
   transition: all 0.3s ease;
 }
-header nav a::after {
+header .desk a::after {
   transition: all 0.3s ease;
 }
-header nav a:hover {
+header .desk a:hover {
   transform: translateY(-5px);
 }
-header nav a:hover::after {
+header .desk a:hover::after {
   transform: translateY(5px);
   background-position: 30px 0;
+}
+header .mobile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  header .mobile {
+    display: none;
+  }
+}
+header .mobile a {
+  margin: 5vh 0;
+  color: #4E485F;
+  letter-spacing: 0.5px;
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
 }
 
 footer p {
@@ -144,12 +202,17 @@ html {
 }
 #top .filters {
   height: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(150px);
+}
+@media screen and (min-width: 1280px) {
+  #top .filters {
+    padding-bottom: 5rem;
+  }
 }
 #top .filters::before {
   content: "";
@@ -164,32 +227,85 @@ html {
 #top .filters .container .main-title {
   width: 100%;
   padding: 0 3rem;
-  line-height: 1.15;
+  line-height: 1.25;
 }
-#top .filters .container .main-title .star_1_svg {
-  transform: scale(0.9);
+@media screen and (min-width: 1024px) {
+  #top .filters .container .main-title {
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #top .filters .container .main-title {
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1536px) {
+  #top .filters .container .main-title {
+    line-height: 1.15;
+  }
 }
 #top .filters .container .main-title .top {
   width: max-content;
+  margin-left: auto;
   margin-right: auto;
-  margin-left: 0;
   position: relative;
   display: block;
+}
+@media screen and (min-width: 1024px) {
+  #top .filters .container .main-title .top {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 #top .filters .container .main-title .top::after {
   content: "_";
   position: absolute;
-  right: -7.5rem;
+  right: -3.5rem;
   transform: scaleX(150%);
+}
+@media screen and (min-width: 1024px) {
+  #top .filters .container .main-title .top::after {
+    right: -4.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #top .filters .container .main-title .top::after {
+    right: -6rem;
+  }
 }
 #top .filters .container .main-title .bot {
   width: max-content;
-  margin-right: 0;
   margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
-#top .filters .container .main-title .bot svg {
-  margin-right: 6rem;
+@media screen and (min-width: 1024px) {
+  #top .filters .container .main-title .bot {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+#top .filters .container .main-title .bot .star_svg {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  #top .filters .container .main-title .bot .star_svg {
+    display: block;
+    margin-right: 1rem;
+    transform: scale(0.7);
+  }
+}
+@media screen and (min-width: 1280px) {
+  #top .filters .container .main-title .bot .star_svg {
+    margin-right: 4rem;
+    transform: scale(0.8);
+  }
+}
+@media screen and (min-width: 1536px) {
+  #top .filters .container .main-title .bot .star_svg {
+    transform: scale(0.9);
+    margin-right: 6rem;
+  }
 }
 #top .filters .container > a {
   width: 150px;
@@ -208,24 +324,25 @@ html {
   position: relative;
   transition: all 0.3s ease;
 }
+#top .filters .container > a > div .star_borders_svg {
+  width: 75%;
+  height: 75%;
+  animation: star_spin 30s linear infinite;
+  transition: all 0.5s cubic-bezier(0.8, 0, 0.2, 1) 0.1s;
+}
 #top .filters .container > a > div .arrow_down_svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
   transition: all 0.3s ease;
 }
-#top .filters .container > a > div::after {
-  content: url("/res/pictos/star_borders.svg");
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  animation: star_spin 30s linear infinite;
-  transform-origin: center;
+#top .filters .container > a:hover > div .star_borders_svg {
+  width: 120%;
+  height: 120%;
 }
-#top .filters .container > a:hover > div {
-  transform: scale(1.25);
-}
-#top .filters .container > a:hover > div > .arrow_down_svg {
-  transform: scale(0.8);
+#top .filters .container > a:hover > div .arrow_down_svg {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 @keyframes star_spin {
@@ -375,7 +492,7 @@ html {
   top: 0;
   left: 0;
   background-image: url("/res/images/grain.png");
-  background-size: 360px 202.5px;
+  background-size: 180px 101.25px;
   backdrop-filter: blur(75px);
   border-radius: 2rem;
 }

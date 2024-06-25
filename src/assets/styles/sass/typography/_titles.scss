@@ -7,7 +7,16 @@
 }
 
 .main-title {
-    font-size: 12rem;
+    font-size: 6rem;
+    @media screen and (min-width: $lg) {
+        font-size: 8rem;
+    }
+    @media screen and (min-width: $xl) {
+        font-size: 10rem;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: 12rem;
+    }
     font-family: 'Iquost';
     margin-bottom: 1rem;
     color : $primary;
