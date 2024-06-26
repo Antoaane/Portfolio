@@ -1,19 +1,41 @@
-// border radius var
-
-$r-sm: 0.25rem;
-$r-md: 0.5rem;
-$r-lg: 1rem;
-$r-xl: 2rem;
-$r-xxl: 4rem;
-$r-xxxl: 8rem;
-$r-full: 9999px;
-
 // breakpoints
 
-$xs: 360px;
+$xs: 420px;
 $sm: 640px;
 $md: 768px;
 $lg: 1024px;
 $xl: 1280px;
 $xxl: 1536px;
 $xxxl: 1920px;
+
+
+// border radius var
+
+$r-xs: 0.15rem;
+$r-sm: 0.25rem;
+$r-md: 0.5rem;
+$r-lg: 1rem;
+$r-xl: 1.5rem;
+$r-xxl: 2.5rem;
+$r-xxxl: 7rem;
+$r-full: 9999px;
+
+@media screen and (min-width: $sm){
+    $r-xs: 0.25rem;
+    $r-sm: 0.5rem;
+    $r-md: 0.75rem;
+    $r-lg: 1.25rem;
+    $r-xl: 2rem;
+    $r-xxl: 3rem;
+    $r-xxxl: 7rem;
+}
+
+@media screen and (min-width: $md){
+    $r-xs: 0.5rem;
+    $r-sm: 0.75rem;
+    $r-md: 1.25rem;
+    $r-lg: 1.5rem;
+    $r-xl: 2.5rem;
+    $r-xxl: 4rem;
+    $r-xxxl: 8rem;
+}

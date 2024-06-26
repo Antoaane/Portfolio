@@ -254,6 +254,7 @@
 }
 
 #realisations {
+    padding-bottom: 4rem;
 
     .title-container {
         margin-bottom: 2.5rem;
@@ -267,6 +268,10 @@
         .h2 {
             margin: 0 2.5rem;
             color: $accent;
+            text-align: center;
+            @media screen and (min-width: $sm){
+                text-align: left;
+            }
         }
 
         .waves {
@@ -289,7 +294,7 @@
 
     .container {
         padding: 0 2rem;
-        @media screen and (min-width: $xxl) {
+        @media screen and (min-width: $xl) {
             padding: 2rem;
 
             &._borders {
@@ -314,7 +319,7 @@
             }
 
             @media screen and (min-width: $xxl) {
-                height: 70vh;
+                height: 65vh;
             }
 
             .separator {
@@ -351,8 +356,11 @@
                 @include shadow;
 
                 .innerwav-img {
-                    height: 100%;
                     width: 100%;
+                    @media screen and (min-width: $xl) {
+                        width: auto;
+                    }
+                    height: 100%;
                     border-radius: $r-xl;
                     transition: all 0.3s ease;
 
@@ -377,22 +385,39 @@
 
             &>.multiple-imgs {
                 display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                @media screen and (min-width: $sm){
+                    flex-direction: row;
+                    gap: 0rem;
+                }
                 align-items: center;
 
                 .line {
                     width: 5px;
                     height: 60px;
-
                     margin: 0 1rem;
+
+                    display: none;
+                    @media screen and (min-width: $sm){
+                        display: block;
+                    }
 
                     background-color: $accent;
                     border-radius: $r-full;
                 }
                 
                 &>img {
-                    flex-grow: 1;
+                    width: 100%;
+                    height: auto;
+                    @media screen and (min-width: $sm) {
+                        width: auto;
+                        max-width: calc((100% - 10px - 4rem) / 3);
+                        height: 100%;
+                    }
                     @media screen and (min-width: $xl) {
-                        flex-grow: auto;
+                        width: auto;
+                        max-width: none;
                         height: 100%;
                     }
                     border-radius: $r-md;
@@ -408,22 +433,28 @@
                 }
             }
 
-            &>.star_little_svg {
-                width: 50px;
-                margin: 0 1.5rem;
+            &>.star-container {
 
-                display: none;
-                @media screen and (min-width: $xl) {
-                    display: block;
+                &>.star_little_svg {
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 1.5rem;
+
+                    display: none;
+                    @media screen and (min-width: $xl) {
+                        display: block;
+                    }
+
+                    animation: star_spin 10s linear infinite;
                 }
-
-                animation: star_spin 10s linear infinite;
             }
 
             .description {
                 width: 100%;
-                height: 50vh;
                 position: relative;
+                @media screen and (min-width: $sm) {
+                    height: 50vh;
+                }
                 
                 @media screen and (min-width: $xl) {
                     width: auto;
@@ -475,10 +506,15 @@
                 .content {
                     width: 100%;
                     height: 100%;
-                    padding: 4rem;
+                    padding: 3rem 1rem;
+                    @media screen and (min-width: $xs) {
+                        padding: 4rem 2rem;
+                    }
+                    @media screen and (min-width: $sm) {
+                        padding: 4rem;
+                    }
 
-                    position: absolute;
-                    inset: 0;
+                    position: relative;
                     z-index: 20;
 
                     display: flex;
@@ -509,37 +545,65 @@
     height: 100vh;
 
     .content {
-        padding-right: 4rem;
+        padding-right: 0rem;
+        @media screen and (min-width: $lg) {
+            padding-right: 4rem;
+        }
 
         .h2 {
+            width: 100%;
             margin-bottom: 2rem;
 
-            display: flex;
-            align-items: center;
-
+            display: inline-block;
             color: $accent;
+            text-align: center;
+
+            @media screen and (min-width: $sm) {
+                display: flex;
+                align-items: center;
+            }
 
             &>.wave_little_svg {
                 width: 70px;
                 margin-right: 1rem;
+                display: none;
+                @media screen and (min-width: $sm) {
+                    display: block;
+                }
             }
         }
 
         p {
             color: $accent;
+            padding: 2rem 0.5rem;
         }
     }
 
     .image {
-        padding-left: 4rem;
+        min-height: 75%;
+        height: 75%;
+        padding-right: 0rem;
+        @media screen and (min-width: $xl) {
+            padding-right: 4rem;
+        }
         position: relative;
 
         .star_svg {
             position: absolute;
-            top: -5rem;
-            right: -3rem;
+            top: -7rem;
+            right: -7rem;
 
-            transform: scale(0.75);
+            transform: scale(0.3);
+            @media screen and (min-width: $sm) {
+                transform: scale(0.5);
+                top: -7rem;
+                right: -6rem;
+            }
+            @media screen and (min-width: $xl) {
+                transform: scale(0.6);
+                top: -7rem;
+                right: -3rem;
+            }
 
             path {
                 fill: $accent;
@@ -551,7 +615,14 @@
             height: 100%;
             object-fit: cover;
 
-            border: darken($primary, 2.5%) solid 15px;
+            border: darken($primary, 2.5%) solid;
+            border-width: 7.5px;
+            @media screen and (min-width: $sm) {
+                border-width: 10px;
+            }
+            @media screen and (min-width: $lg) {
+                border-width: 15px;
+            }
             border-radius: $r-xxl;
         }
     }

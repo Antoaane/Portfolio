@@ -208,7 +208,9 @@
           <img class="innerwav-img" src="/res/images/innerwav.jpg" alt="">
         </div>
 
-        <star_little_svg />
+        <div class="star-container">
+          <star_little_svg />
+        </div>
 
         <div class="description _innerwav">
           <div class="content">
@@ -244,7 +246,9 @@
           </div>
         </div>
 
-        <star_little_svg />
+        <div class="star-container">
+          <star_little_svg />
+        </div>
 
         <img class="realisation _la-renaissance" src="/res/images/la_renaissance.jpg" alt="">
       </div>
@@ -252,7 +256,9 @@
       <div class="container _realisations">
         <img class="realisation _initial-expertise" src="/res/images/bg_initial_expertise.jpg" alt="">
 
-        <star_little_svg />
+        <div class="star-container">
+          <star_little_svg />
+        </div>
 
         <div class="description _initial-expertise">
           <div class="content">
@@ -283,7 +289,9 @@
           </div>
         </div>
 
-        <star_little_svg />
+        <div class="star-container">
+          <star_little_svg />
+        </div>
 
         <div class="multiple-imgs realisation _borders">
           <img class="_zetruc" src="/res/images/zetruc1.jpg" alt="">
@@ -294,13 +302,18 @@
         </div>
 
       </div>
+    </div>
 
-      <div id="qui-suis-je" class="container grid grid-cols-12 items-center">
+    <div id="qui-suis-je" class="container px-8 grid grid-cols-12 items-center">
         
-        <div class="content col-span-6">
+        <div class="content lg:col-span-6 col-span-full">
           <h2 class="h2">
             <wave_little_svg /> Qui suis-je ?
           </h2>
+          <div class="image lg:hidden block">
+            <star_svg />
+            <img src="\res\images\profile.jpg" alt="">
+          </div>
           <p>
             Je suis Antoine Lauzis, un développeur web passionné et diplômé originaire de Guadeloupe, actuellement basé à Troyes. C’est assez tôt, lors de mes premières années de lycée, que mon intérêt pour les technologies du web a émergé et est devenu une passion qui ne m’a pas lâché depuis. J’ai donc poursuivi mes études sur la préparation d’un Bachelor Universitaire de Technologie en Métiers du Multimédia et de l’Internet (BUT MMI) en parcours développement web. 
             <br><br>
@@ -310,13 +323,12 @@
           </p>
         </div>
 
-        <div class="image col-span-6">
+        <div class="image col-span-6 hidden lg:block">
           <star_svg />
           <img src="\res\images\profile.jpg" alt="">
         </div>
 
       </div>
-
-    </div>
+      
   </main>
 </template>
