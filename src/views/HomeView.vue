@@ -68,7 +68,7 @@
       <div class="filters">
         <div class="container">
 
-          <h1 class="main-title hidden md:flex">
+          <h1 class="main-title hidden md:block">
             <span class="top">Je développe</span>
             <span class="bot">
               <star_svg /> vos projets
@@ -232,7 +232,7 @@
         <div class="separator">
           <star_little_svg />
         </div>
-        
+
         <div class="description _la-renaissance">
           <div class="content">
             <h3 class="h3">La Ren<span>a</span>issance</h3>
