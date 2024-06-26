@@ -42,7 +42,10 @@
 
     .filters {
         height: 100%;
-        padding-bottom: 3rem;
+        padding-bottom: 6rem;
+        @media screen and (min-width: $md) {
+            padding-bottom: 3rem;
+        }
         @media screen and (min-width: $xl) {
             padding-bottom: 5rem;
         }
@@ -212,7 +215,18 @@
         padding: 5rem 0;
     
         .text {
-            padding-right: 6rem;
+            padding-right: 0rem;
+            margin-bottom: 3rem;
+            padding: 0 3rem;
+            @media screen and (min-width: $md) {
+                padding-right: 6rem;
+                margin-bottom: 0rem;
+                padding: 0;
+            }
+            @media screen and (min-width: $lg) {
+                padding-right: 0rem;
+                padding-left: 3rem;
+            }
 
             display: flex;
             flex-direction: column;
@@ -227,7 +241,10 @@
         }
 
         .illustration {
-            padding-left: 3rem;
+            padding: 0 1rem;
+            @media screen and (min-width: $md) {
+                padding: 0 0 0 3rem;
+            }
 
             display: flex;
             justify-content: center;
@@ -239,6 +256,11 @@
 #realisations {
 
     .title-container {
+        margin-bottom: 2.5rem;
+        @media screen and (min-width: $xl) {
+            margin-bottom: 0rem;
+        }
+
         display: flex;
         justify-content: center;
 
@@ -248,7 +270,11 @@
         }
 
         .waves {
-            display: flex;
+            display: none;
+            @media screen and (min-width: $lg) {
+                display: flex;
+            }
+
             align-items: center;
             
             .wave_extended_svg {
@@ -262,10 +288,10 @@
     }
 
     .container {
-        padding: 2rem;
-        margin-bottom: 2.5rem;
+        padding: 0 2rem;
+        @media screen and (min-width: $xxl) {
+            padding: 2rem;
 
-        @media screen and (min-width: $xl) {
             &._borders {
                 border: 10px solid $accent;
                 border-radius: calc($r-xl + 2rem);
@@ -274,19 +300,50 @@
 
         &._realisations {
             display: flex;
-            flex-direction: column;
+            &:nth-of-type(2n) {
+                flex-direction: column;
+            }
+            &:nth-of-type(2n + 1) {
+                flex-direction: column-reverse;
+            }
             align-items: center;
 
             @media screen and (min-width: $xl) {
+                height: 50vh;
+                flex-direction: row !important;
+            }
+
+            @media screen and (min-width: $xxl) {
                 height: 70vh;
-                flex-direction: row;
+            }
+
+            .separator {
+                width: 100%;
+                height: 50px;
+                margin: 2rem 0;
+
+                display: flex;
+                @media screen and (min-width: $xl) {
+                    display: none;
+                }
+                justify-content: center;
+                align-items: center;
+        
+                .star_little_svg {
+                    width: 50px;
+                    margin: 0 1.5rem;
+        
+                    animation: star_spin 10s linear infinite;
+                }
             }
             
             .realisation {
                 width: 100%;
+                margin-bottom: 2rem;
                 @media screen and (min-width: $xl) {
                     width: auto;
                     height: 100%;
+                    margin-bottom: 0rem;
                 }
                 border-radius: $r-xl;
                 position: relative;
@@ -333,7 +390,11 @@
                 }
                 
                 &>img {
-                    height: 100%;
+                    flex-grow: 1;
+                    @media screen and (min-width: $xl) {
+                        flex-grow: auto;
+                        height: 100%;
+                    }
                     border-radius: $r-md;
 
                     @include shadow;
@@ -347,17 +408,28 @@
                 }
             }
 
-            .star_little_svg {
+            &>.star_little_svg {
                 width: 50px;
                 margin: 0 1.5rem;
+
+                display: none;
+                @media screen and (min-width: $xl) {
+                    display: block;
+                }
 
                 animation: star_spin 10s linear infinite;
             }
 
             .description {
-                height: 100%;
+                width: 100%;
+                height: 50vh;
                 position: relative;
-                flex-grow: 1;
+                
+                @media screen and (min-width: $xl) {
+                    width: auto;
+                    height: 100%;
+                    flex-grow: 1;
+                }
 
                 @include shadow;
 

@@ -7,7 +7,10 @@
 }
 
 .main-title {
-    font-size: 6rem;
+    font-size: 4rem;
+    @media screen and (min-width: $sm) {
+        font-size: 6rem;
+    }
     @media screen and (min-width: $lg) {
         font-size: 8rem;
     }
@@ -27,7 +30,13 @@
 }
 
 .h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    @media screen and (min-width: $sm) {
+        font-size: 3rem;
+    }
+    @media screen and (min-width: $xl) {
+        font-size: 3.5rem;
+    }
     font-family: 'Iquost';
     color : $primary;
     line-height: 1.2;
@@ -40,6 +49,12 @@
 
 .h3 {
     font-size: 3.25rem;
+    @media screen and (min-width: $xl) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: 3.25rem;
+    }
     font-family: 'Iquost';
     color : $primary;
     line-height: 1.2;

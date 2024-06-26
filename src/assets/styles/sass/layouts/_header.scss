@@ -7,10 +7,20 @@ header {
     left: 0;
     z-index: 999;
 
+    display: none;
+
+    transition: all 0.3s ease;
+
     // background-color: $primary;
     @media screen and (min-width: $md) {
         background-color: transparent;
+        display: block;
         height: 90px;
+    }
+
+    &.scrolled {
+        background-color: rgba($accent, $alpha: 0.75);
+        backdrop-filter: blur(10px);
     }
 
     #desk {

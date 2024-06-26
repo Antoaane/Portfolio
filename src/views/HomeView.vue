@@ -68,11 +68,15 @@
       <div class="filters">
         <div class="container">
 
-          <h1 class="main-title">
+          <h1 class="main-title hidden md:flex">
             <span class="top">Je développe</span>
             <span class="bot">
               <star_svg /> vos projets
             </span>
+          </h1>
+
+          <h1 class="main-title flex flex-col text-center md:hidden">
+            Je<br>développe<br>vos<br>projets
           </h1>
           
           <a href="#competences">
@@ -89,7 +93,7 @@
     <div id="competences">
       <div class="container px-10 grid grid-cols-12">
 
-        <div class="text xl:col-span-5 col-span-full">
+        <div class="text lg:col-span-5 col-span-full">
 
           <h2 class="h2">
             Votre site <span>w</span>eb <br>
@@ -104,7 +108,7 @@
 
         </div>
 
-        <div class="illustration xl:col-span-7 col-span-full">
+        <div class="illustration lg:col-span-7 col-span-full">
           <div class="w-full aspect-square relative flex items-center justify-center">
             <img class="w-full" src="/res/images/illustration_competences.png" alt="">
 
@@ -112,19 +116,19 @@
               <section class="splide front-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/html.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/js.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/ts.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/vue.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
                     </li>
                   </ul>
@@ -136,13 +140,13 @@
               <section class="splide front-style w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
-                    <li class="splide__slide p-3 flex items-center justify-center">
+                    <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
                       <img class="w-full" src="/res/pictos/logos/css.svg" alt="">
                     </li>
-                    <li class="splide__slide p-3 flex items-center justify-center">
+                    <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
                       <img class="w-full" src="/res/pictos/logos/sass.svg" alt="">
                     </li>
-                    <li class="splide__slide p-3 flex items-center justify-center">
+                    <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
                       <img class="w-full" src="/res/pictos/logos/tailwind.svg" alt="">
                     </li>
                   </ul>
@@ -154,16 +158,16 @@
               <section class="splide back-end w-full h-full opacity-75" aria-label="Splide Basic HTML Example">
                 <div class="splide__track h-full">
                   <ul class="splide__list">
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/php.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/laravel.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/wordpress.svg" alt="">
                     </li>
-                    <li class="splide__slide 2xl:p-10 p-5 flex items-center justify-center">
+                    <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
                       <img class="h-full" src="/res/pictos/logos/themosis.svg" alt="">
                     </li>
                   </ul>
@@ -196,7 +200,6 @@
       </div>
 
       <div class="container _realisations _borders">
-
         <div class="realisation _innerwav">
           <video class="innerwav-video" autoplay loop muted>
             <source src="/res/videos/innerwav.mp4" type="video/mp4">
@@ -211,19 +214,25 @@
           <div class="content">
             <h3 class="h3">Inner<span>w</span>av</h3>
             <p>
-              Site web de vente de prestation de mastering audio personnalisé. Présentation avant/après des projet de mastering déjà réalisés. 
+              Site web de vente de prestation de mastering audio personnalisé.
               <br><br>
-              Création des commandes laissant le choix au client de définir son projet et de choisir les options de mastering qu'il souhaite appliquer. 
+              Création des commandes laissant le choix au client de définir son projet et de choisir les options de mastering qu'il souhaite y appliquer. 
               <br><br>
-              Propose un espace client pour suivre l'avancement des commandes et émettre un certain nombre de retours si besoin.
+              Propose un espace client pour suivre l'avancement des commandes et émettre des retours.
             </p>
           </div>
         </div>
 
+        <div class="separator">
+          <star_little_svg />
+        </div>
       </div>
 
       <div class="container _realisations">
-
+        <div class="separator">
+          <star_little_svg />
+        </div>
+        
         <div class="description _la-renaissance">
           <div class="content">
             <h3 class="h3">La Ren<span>a</span>issance</h3>
@@ -238,11 +247,9 @@
         <star_little_svg />
 
         <img class="realisation _la-renaissance" src="/res/images/la_renaissance.jpg" alt="">
-
       </div>
 
       <div class="container _realisations">
-
         <img class="realisation _initial-expertise" src="/res/images/bg_initial_expertise.jpg" alt="">
 
         <star_little_svg />
@@ -258,6 +265,9 @@
           </div>
         </div>
 
+        <div class="separator">
+          <star_little_svg />
+        </div>
       </div>
 
       <div class="container _realisations">
