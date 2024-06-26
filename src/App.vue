@@ -1,12 +1,28 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 
-window.addEventListener('scroll', function() {
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function doSomething(scrollPos) {
   var header = document.querySelector('header');
-  if (window.scrollY > 150) {
+  if (scrollPos > 150) {
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', function() {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
   }
 });
 </script>
