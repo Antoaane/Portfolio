@@ -1,6 +1,8 @@
 <script setup>
   import Splide from '@splidejs/splide';
+  import { gsap } from "gsap";
   import { onMounted } from 'vue';
+  import CustomEase from "gsap/CustomEase";
 
   import star_svg from '../components/SVGs/star_svg.vue'
   import star_borders_svg from '../components/SVGs/star_borders_svg.vue'
@@ -49,6 +51,66 @@
     setTimeout(() => {
       backEnd.mount();
     }, 200);
+  });
+
+  onMounted(() => {
+    gsap.from(".top", {
+      duration: 1,
+      x: 1000,
+      opacity: 0,
+      ease: "power4.out",
+    });
+
+    gsap.from(".bot", {
+      duration: 1,
+      delay: 0.15,
+      x: -1000,
+      opacity: 0,
+      ease: "power4.out",
+    });
+
+    gsap.from(".star_svg", {
+      duration: 1,
+      delay: 0.3,
+      x: -2000,
+      rotate: -360,
+      ease: "power4.out",
+    });
+
+
+
+    gsap.to(".star_svg", {
+      duration: 20,
+      delay: 1.2,
+      x: -20,
+      rotate: 360,
+      repeat: -1,
+      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
+    });
+
+    gsap.to(".star_svg", {
+      duration: 60,
+      delay: 1,
+      rotate: 360,
+      repeat: -1,
+      ease: 'none',
+    });
+
+    gsap.to(".top", {
+      delay: 1,
+      duration: 20,
+      x: -20,
+      repeat: -1,
+      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
+    });
+
+    gsap.to(".bot", {
+      delay: 1.2,
+      duration: 20,
+      x: 20,
+      repeat: -1,
+      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
+    });
   });
 
 </script>

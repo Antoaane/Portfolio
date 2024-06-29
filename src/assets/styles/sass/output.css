@@ -152,21 +152,22 @@ header #desk {
     justify-content: end;
   }
 }
-header #desk a {
+header #desk > div a {
   height: min-content;
   margin: 0 2rem;
+  display: block;
   color: white;
   letter-spacing: 0.5px;
   font-size: 1.15rem;
   transition: all 0.3s ease;
 }
-header #desk a::after {
+header #desk > div a::after {
   transition: all 0.3s ease;
 }
-header #desk a:hover {
+header #desk > div a:hover {
   transform: translateY(-5px);
 }
-header #desk a:hover::after {
+header #desk > div a:hover::after {
   transform: translateY(5px);
   background-position: 30px 0;
 }
