@@ -55,6 +55,7 @@
 
   onMounted(() => {
     gsap.from(".top", {
+      delay: 1,
       duration: 1,
       x: 1000,
       opacity: 0,
@@ -63,7 +64,7 @@
 
     gsap.from(".bot", {
       duration: 1,
-      delay: 0.15,
+      delay: 1.15,
       x: -1000,
       opacity: 0,
       ease: "power4.out",
@@ -71,7 +72,7 @@
 
     gsap.from(".star_svg", {
       duration: 1,
-      delay: 0.3,
+      delay: 1.3,
       x: -2000,
       rotate: -360,
       ease: "power4.out",
@@ -81,7 +82,7 @@
 
     gsap.to(".star_svg", {
       duration: 20,
-      delay: 1.2,
+      delay: 2.2,
       x: -20,
       rotate: 360,
       repeat: -1,
@@ -90,14 +91,14 @@
 
     gsap.to(".star_svg", {
       duration: 60,
-      delay: 1,
+      delay: 2,
       rotate: 360,
       repeat: -1,
       ease: 'none',
     });
 
     gsap.to(".top", {
-      delay: 1,
+      delay: 2,
       duration: 20,
       x: -20,
       repeat: -1,
@@ -105,7 +106,7 @@
     });
 
     gsap.to(".bot", {
-      delay: 1.2,
+      delay: 2.2,
       duration: 20,
       x: 20,
       repeat: -1,

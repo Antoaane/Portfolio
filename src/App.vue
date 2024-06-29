@@ -30,6 +30,7 @@ window.addEventListener('scroll', function() {
 
 onMounted(() => {
   gsap.from(".nav-item", {
+    delay: 1.5,
     duration: .5,
     y: -100,
     ease: "power4.out",
