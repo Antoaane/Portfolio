@@ -375,28 +375,17 @@ html {
 #top .filters .container > a > div .star_borders_svg {
   width: 75%;
   height: 75%;
-  animation: star_spin 30s linear infinite;
-  transition: all 2s cubic-bezier(0, 1, 0.3, 1.5);
 }
 #top .filters .container > a > div .arrow_down_svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  transition: all 0.3s ease;
 }
-#top .filters .container > a:hover > div .star_borders_svg {
-  width: 120%;
-  height: 120%;
+#top .filters .container > a:hover > div {
+  transform: scale(1.1);
 }
-@keyframes star_spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 #competences .container {
   min-height: 100vh;
   padding: 5rem 0;
@@ -526,15 +515,12 @@ html {
 #realisations .container._realisations .separator .star_little_svg {
   width: 50px;
   margin: 0 1.5rem;
-  animation: star_spin 10s linear infinite;
 }
 #realisations .container._realisations .realisation {
   width: 100%;
   margin-bottom: 2rem;
   border-radius: 1.5rem;
   position: relative;
-  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
 }
 @media screen and (min-width: 1280px) {
   #realisations .container._realisations .realisation {
@@ -548,6 +534,8 @@ html {
   height: 100%;
   border-radius: 1.5rem;
   transition: all 0.3s ease;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 @media screen and (min-width: 1280px) {
   #realisations .container._realisations .realisation .innerwav-img {
@@ -623,7 +611,6 @@ html {
   height: 50px;
   margin: 0 1.5rem;
   display: none;
-  animation: star_spin 10s linear infinite;
 }
 @media screen and (min-width: 1280px) {
   #realisations .container._realisations > .star-container > .star_little_svg {

@@ -166,9 +166,6 @@
                     .star_borders_svg {
                         width: 75%;
                         height: 75%;
-                        
-                        animation: star_spin 30s linear infinite;
-                        transition: all 2s cubic-bezier(0, 1, 0.3, 1.5);
                     }
 
                     .arrow_down_svg {
@@ -176,35 +173,17 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%) scale(0.9);
-
-                        transition: all 0.3s ease;
                     }
                 }
 
                 &:hover {
                     
                     &>div {
-                        .star_borders_svg {
-                            width: 120%;
-                            height: 120%;
-                        }
-
-                        .arrow_down_svg {
-                            // transform: translate(-50%, -50%) scale(1);
-                        }
+                        transform: scale(1.1);
                     }
                 }
             }
         }
-    }
-}
-
-@keyframes star_spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
     }
 }
 
@@ -337,8 +316,6 @@
                 .star_little_svg {
                     width: 50px;
                     margin: 0 1.5rem;
-        
-                    animation: star_spin 10s linear infinite;
                 }
             }
             
@@ -353,8 +330,6 @@
                 border-radius: $r-xl;
                 position: relative;
 
-                @include shadow;
-
                 .innerwav-img {
                     width: 100%;
                     @media screen and (min-width: $xl) {
@@ -363,6 +338,8 @@
                     height: 100%;
                     border-radius: $r-xl;
                     transition: all 0.3s ease;
+
+                    @include shadow;
 
                     &:hover {
                         opacity: 0;
@@ -444,8 +421,6 @@
                     @media screen and (min-width: $xl) {
                         display: block;
                     }
-
-                    animation: star_spin 10s linear infinite;
                 }
             }
 
