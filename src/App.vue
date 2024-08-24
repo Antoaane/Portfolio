@@ -43,7 +43,7 @@ onMounted(() => {
 
 <template>
   <header>
-    <nav id="desk" class="container">
+    <nav id="desk" class="container px-10">
       <div class="nav-item">
         <a class="underline-wave" href="#competences">Compétences</a>
       </div>

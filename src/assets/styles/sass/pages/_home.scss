@@ -43,12 +43,7 @@
     .filters {
         height: 100%;
         padding-bottom: 6rem;
-        @media screen and (min-width: $md) {
-            padding-bottom: 3rem;
-        }
-        @media screen and (min-width: $xl) {
-            padding-bottom: 5rem;
-        }
+
         position : relative;
 
         display: flex;
@@ -56,6 +51,13 @@
         justify-content: center;
 
         backdrop-filter: blur(150px);
+
+        @media screen and (min-width: $md) {
+            padding-bottom: 3rem;
+        }
+        @media screen and (min-width: $xl) {
+            padding-bottom: 5rem;
+        }
 
         &::before {
             content: '';
@@ -89,14 +91,15 @@
                     width: max-content;
                     margin-left: auto;
                     margin-right: auto;
-                    @media screen and (min-width: $lg) {
-                        margin-right: auto;
-                        margin-left: 0;
-                    }
 
                     position: relative;
 
                     display: block;
+
+                    @media screen and (min-width: $lg) {
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
 
                     &::after {
                         content: '_';
@@ -116,12 +119,13 @@
                     width: max-content;
                     margin-left: auto;
                     margin-right: auto;
+
+                    display : flex;
+
                     @media screen and (min-width: $lg) {
                         margin-right: 0;
                         margin-left: auto;
                     }
-
-                    display : flex;
 
                     .star_svg {
                         display: none;
@@ -197,6 +201,13 @@
             padding-right: 0rem;
             margin-bottom: 3rem;
             padding: 0 3rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            color: $accent;
+
             @media screen and (min-width: $md) {
                 padding-right: 6rem;
                 margin-bottom: 0rem;
@@ -207,42 +218,40 @@
                 padding-left: 3rem;
             }
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            color: $accent;
-
             .h2 {
                 margin-bottom: 2rem;
                 color: $accent;
             }
         }
 
-        .illustration {
+        .illustration { 
             padding: 0 1rem;
-            @media screen and (min-width: $md) {
-                padding: 0 0 0 3rem;
-            }
 
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and (min-width: $md) {
+                padding: 0 0 0 3rem;
+            }
         }
     }
 }
 
 #realisations {
     padding-bottom: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 
     .title-container {
         margin-bottom: 2.5rem;
-        @media screen and (min-width: $xl) {
-            margin-bottom: 0rem;
-        }
 
         display: flex;
         justify-content: center;
+
+        @media screen and (min-width: $xl) {
+            margin-bottom: 0rem;
+        }
 
         .h2 {
             margin: 0 2.5rem;
@@ -255,11 +264,11 @@
 
         .waves {
             display: none;
+            align-items: center;
+
             @media screen and (min-width: $lg) {
                 display: flex;
             }
-
-            align-items: center;
             
             .wave_extended_svg {
                 width: 100px;
@@ -284,13 +293,14 @@
 
         &._realisations {
             display: flex;
+            align-items: center;
+            
             &:nth-of-type(2n) {
                 flex-direction: column;
             }
             &:nth-of-type(2n + 1) {
                 flex-direction: column-reverse;
             }
-            align-items: center;
 
             @media screen and (min-width: $xl) {
                 height: 50vh;

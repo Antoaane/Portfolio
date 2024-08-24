@@ -144,7 +144,7 @@
     gsap.from("#content-1 .h2", {
       scrollTrigger: '#content-1',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       x: -100,
       opacity: 0,
       ease: "power4.out",
@@ -152,7 +152,7 @@
     gsap.from("#content-1 p", {
       scrollTrigger: '#content-1',
       duration: 1,
-      delay: 1.25,
+      delay: 0.75,
       x: -100,
       opacity: 0,
       ease: "power4.out",
@@ -161,7 +161,7 @@
     gsap.from(".illustration", {
       scrollTrigger: '#content-1',
       duration: 1,
-      delay: 1.5,
+      delay: 1,
       y: -150,
       opacity: 0,
       ease: "power4.out",
@@ -170,7 +170,7 @@
     gsap.from("#realisations .h2", {
       scrollTrigger: '#realisations .h2',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       y: -100,
       opacity: 0,
       ease: "power4.out",
@@ -178,7 +178,7 @@
     gsap.from("#realisations .waves:nth-child(1)", {
       scrollTrigger: '#realisations .h2',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       x: 100,
       opacity: 0,
       ease: "power4.out",
@@ -186,7 +186,7 @@
     gsap.from("#realisations .waves:nth-child(3)", {
       scrollTrigger: '#realisations .h2',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       x: -100,
       opacity: 0,
       ease: "power4.out",
@@ -195,7 +195,7 @@
     gsap.from("._innerwav .innerwav-img", {
       scrollTrigger: '._innerwav',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       x: -100,
       opacity: 0,
       ease: "power4.out",
@@ -203,14 +203,14 @@
     gsap.from("._innerwav .innerwav-video", {
       scrollTrigger: '._innerwav',
       duration: .1,
-      delay: 2,
+      delay: 1,
       opacity: 0,
       ease: "power4.out"
     });
     gsap.from(".description._innerwav", {
       scrollTrigger: '._innerwav',
       duration: 1,
-      delay: 1,
+      delay: 0.5,
       x: 100,
       opacity: 0,
       ease: "power4.out",
@@ -222,7 +222,7 @@
       gsap.from(star, {
         scrollTrigger: star,
         duration: 1,
-        delay: 1,
+        delay: 0.5,
         y: -100,
         opacity: 0,
         ease: "power4.out",

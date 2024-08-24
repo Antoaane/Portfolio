@@ -33,6 +33,9 @@
 }
 
 .h2 {
+    font-family: 'Iquost';
+    color : $primary;
+    line-height: 1.2;
     font-size: 3rem;
     @media screen and (min-width: $xs) {
         font-size: 4rem;
@@ -43,9 +46,6 @@
     @media screen and (min-width: $xl) {
         font-size: 3.5rem;
     }
-    font-family: 'Iquost';
-    color : $primary;
-    line-height: 1.2;
 
     span {
         font-family: 'Iquost';
@@ -54,6 +54,9 @@
 }
 
 .h3 {
+    font-family: 'Iquost';
+    color : $primary;
+    line-height: 1.2;
     font-size: 2rem;
     @media screen and (min-width: $xs) {
         font-size: 2.25rem;
@@ -64,9 +67,6 @@
     @media screen and (min-width: $xxl) {
         font-size: 3.25rem;
     }
-    font-family: 'Iquost';
-    color : $primary;
-    line-height: 1.2;
 
     span {
         font-family: 'Iquost';
