@@ -294,7 +294,7 @@
         &._realisations {
             display: flex;
             align-items: center;
-            
+
             &:nth-of-type(2n) {
                 flex-direction: column;
             }
@@ -329,94 +329,118 @@
                 }
             }
             
-            .realisation {
+            .img_link {
                 width: 100%;
                 margin-bottom: 2rem;
+
+                display: block;
+
                 @media screen and (min-width: $xl) {
                     width: auto;
                     height: 100%;
                     margin-bottom: 0rem;
                 }
-                border-radius: $r-xl;
-                position: relative;
 
-                .innerwav-img {
+                .realisation {
                     width: 100%;
-                    @media screen and (min-width: $xl) {
-                        width: auto;
-                    }
-                    height: 100%;
+                    position: relative;
                     border-radius: $r-xl;
+                    outline: 0px solid $accent;
+                    @include shadow;
                     transition: all 0.3s ease;
 
-                    @include shadow;
-
-                    &:hover {
-                        opacity: 0;
-                    }
-                }
-
-                .innerwav-video {
-                    width: 100%;
-                    height: 100%;
-
-                    object-fit: cover;
-                    
-                    position: absolute;
-                    inset: 0;
-                    z-index: -1;
-
-                    border-radius: $r-xl;
-                }
-            }
-
-            &>.multiple-imgs {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                @media screen and (min-width: $sm){
-                    flex-direction: row;
-                    gap: 0rem;
-                }
-                align-items: center;
-
-                .line {
-                    width: 5px;
-                    height: 60px;
-                    margin: 0 1rem;
-
-                    display: none;
-                    @media screen and (min-width: $sm){
-                        display: block;
-                    }
-
-                    background-color: $accent;
-                    border-radius: $r-full;
-                }
-                
-                &>img {
-                    width: 100%;
-                    height: auto;
-                    @media screen and (min-width: $sm) {
-                        width: auto;
-                        max-width: calc((100% - 10px - 4rem) / 3);
-                        height: 100%;
-                    }
                     @media screen and (min-width: $xl) {
                         width: auto;
-                        max-width: none;
                         height: 100%;
                     }
-                    border-radius: $r-md;
 
-                    @include shadow;
+                    .innerwav-img {
+                        width: 100%;
+                        @media screen and (min-width: $xl) {
+                            width: auto;
+                        }
+                        height: 100%;
+                        border-radius: $r-xl;
+                        transition: all 0.3s ease;
+
+                        @include shadow;
+
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                    
+                    .innerwav-video {
+                        width: 100%;
+                        height: 100%;
+
+                        position: absolute;
+                        inset: 0;
+                        z-index: -1;
+
+                        object-fit: cover;
+
+                        border-radius: $r-xl;
+                    }
                 }
 
-                &._borders {
-                    border: 10px solid $accent;
-                    padding: 1rem;
+                &>.multiple-imgs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    @media screen and (min-width: $sm){
+                        flex-direction: row;
+                        gap: 0rem;
+                    }
+                    align-items: center;
+                    transition: all 0.3s ease;
     
-                    @include shadow;
+                    .line {
+                        width: 5px;
+                        height: 60px;
+                        margin: 0 1rem;
+    
+                        display: none;
+                        @media screen and (min-width: $sm){
+                            display: block;
+                        }
+    
+                        background-color: $accent;
+                        border-radius: $r-full;
+                    }
+                    
+                    &>img {
+                        width: 100%;
+                        height: auto;
+                        @media screen and (min-width: $sm) {
+                            width: auto;
+                            max-width: calc((100% - 10px - 4rem) / 3);
+                            height: 100%;
+                        }
+                        @media screen and (min-width: $xl) {
+                            width: auto;
+                            max-width: none;
+                            height: 100%;
+                        }
+                        border-radius: $r-md;
+    
+                        @include shadow;
+                    }
+    
+                    &._borders {
+                        border: 10px solid $accent;
+                        padding: 1rem;
+        
+                        @include shadow;
+                    }
+                }
+
+                &:hover {
+
+                    .realisation {
+                        outline: 5px solid $accent;
+                        filter: brightness(0.8);
+                    }
                 }
             }
 
@@ -530,9 +554,14 @@
     height: 100vh;
 
     .content {
+        margin-left: 0rem;
         padding-right: 0rem;
+
         @media screen and (min-width: $lg) {
             padding-right: 4rem;
+        }
+        @media screen and (min-width: $xl) {
+            margin-left: 3.5rem;
         }
 
         .h2 {
@@ -568,12 +597,14 @@
         min-height: 75%;
         height: 75%;
         padding-right: 0rem;
+
+        position: relative;
+
         @media screen and (min-width: $xl) {
             padding-right: 4rem;
         }
-        position: relative;
 
-        .star_svg {
+        .who_i_am_star {
             position: absolute;
             top: -7rem;
             right: -7rem;

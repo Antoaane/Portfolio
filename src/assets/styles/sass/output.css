@@ -114,6 +114,19 @@
   left: 0;
 }
 
+.btn-primary {
+  background-color: #FFFDF7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-5px);
+}
+
 header {
   width: 100vw;
   height: 100vh;
@@ -518,20 +531,34 @@ html {
   width: 50px;
   margin: 0 1.5rem;
 }
-#realisations .container._realisations .realisation {
+#realisations .container._realisations .img_link {
   width: 100%;
   margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  position: relative;
+  display: block;
 }
 @media screen and (min-width: 1280px) {
-  #realisations .container._realisations .realisation {
+  #realisations .container._realisations .img_link {
     width: auto;
     height: 100%;
     margin-bottom: 0rem;
   }
 }
-#realisations .container._realisations .realisation .innerwav-img {
+#realisations .container._realisations .img_link .realisation {
+  width: 100%;
+  position: relative;
+  border-radius: 1.5rem;
+  outline: 0px solid #4E485F;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 1280px) {
+  #realisations .container._realisations .img_link .realisation {
+    width: auto;
+    height: 100%;
+  }
+}
+#realisations .container._realisations .img_link .realisation .innerwav-img {
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
@@ -540,35 +567,36 @@ html {
   transition: box-shadow 0.3s ease-in-out;
 }
 @media screen and (min-width: 1280px) {
-  #realisations .container._realisations .realisation .innerwav-img {
+  #realisations .container._realisations .img_link .realisation .innerwav-img {
     width: auto;
   }
 }
-#realisations .container._realisations .realisation .innerwav-img:hover {
+#realisations .container._realisations .img_link .realisation .innerwav-img:hover {
   opacity: 0;
 }
-#realisations .container._realisations .realisation .innerwav-video {
+#realisations .container._realisations .img_link .realisation .innerwav-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   position: absolute;
   inset: 0;
   z-index: -1;
+  object-fit: cover;
   border-radius: 1.5rem;
 }
-#realisations .container._realisations > .multiple-imgs {
+#realisations .container._realisations .img_link > .multiple-imgs {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 640px) {
-  #realisations .container._realisations > .multiple-imgs {
+  #realisations .container._realisations .img_link > .multiple-imgs {
     flex-direction: row;
     gap: 0rem;
   }
 }
-#realisations .container._realisations > .multiple-imgs .line {
+#realisations .container._realisations .img_link > .multiple-imgs .line {
   width: 5px;
   height: 60px;
   margin: 0 1rem;
@@ -577,11 +605,11 @@ html {
   border-radius: 9999px;
 }
 @media screen and (min-width: 640px) {
-  #realisations .container._realisations > .multiple-imgs .line {
+  #realisations .container._realisations .img_link > .multiple-imgs .line {
     display: block;
   }
 }
-#realisations .container._realisations > .multiple-imgs > img {
+#realisations .container._realisations .img_link > .multiple-imgs > img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
@@ -589,24 +617,28 @@ html {
   transition: box-shadow 0.3s ease-in-out;
 }
 @media screen and (min-width: 640px) {
-  #realisations .container._realisations > .multiple-imgs > img {
+  #realisations .container._realisations .img_link > .multiple-imgs > img {
     width: auto;
     max-width: calc((100% - 10px - 4rem) / 3);
     height: 100%;
   }
 }
 @media screen and (min-width: 1280px) {
-  #realisations .container._realisations > .multiple-imgs > img {
+  #realisations .container._realisations .img_link > .multiple-imgs > img {
     width: auto;
     max-width: none;
     height: 100%;
   }
 }
-#realisations .container._realisations > .multiple-imgs._borders {
+#realisations .container._realisations .img_link > .multiple-imgs._borders {
   border: 10px solid #4E485F;
   padding: 1rem;
   box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
+}
+#realisations .container._realisations .img_link:hover .realisation {
+  outline: 5px solid #4E485F;
+  filter: brightness(0.8);
 }
 #realisations .container._realisations > .star-container > .star_little_svg {
   width: 50px;
@@ -705,11 +737,17 @@ html {
   height: 100vh;
 }
 #qui-suis-je .content {
+  margin-left: 0rem;
   padding-right: 0rem;
 }
 @media screen and (min-width: 1024px) {
   #qui-suis-je .content {
     padding-right: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #qui-suis-je .content {
+    margin-left: 3.5rem;
   }
 }
 #qui-suis-je .content .h2 {
@@ -750,27 +788,27 @@ html {
     padding-right: 4rem;
   }
 }
-#qui-suis-je .image .star_svg {
+#qui-suis-je .image .who_i_am_star {
   position: absolute;
   top: -7rem;
   right: -7rem;
   transform: scale(0.3);
 }
 @media screen and (min-width: 640px) {
-  #qui-suis-je .image .star_svg {
+  #qui-suis-je .image .who_i_am_star {
     transform: scale(0.5);
     top: -7rem;
     right: -6rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #qui-suis-je .image .star_svg {
+  #qui-suis-je .image .who_i_am_star {
     transform: scale(0.6);
     top: -7rem;
     right: -3rem;
   }
 }
-#qui-suis-je .image .star_svg path {
+#qui-suis-je .image .who_i_am_star path {
   fill: #4E485F;
 }
 #qui-suis-je .image img {

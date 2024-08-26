@@ -1,9 +1,7 @@
 <script setup>
   import Splide from '@splidejs/splide';
-  import { gsap } from "gsap";
   import { onMounted } from 'vue';
-  import CustomEase from "gsap/CustomEase";
-  import ScrollTrigger from "gsap/ScrollTrigger";
+  import { animations } from '../components/ANIMATIONS'
 
   import star_svg from '../components/SVGs/star_svg.vue'
   import star_borders_svg from '../components/SVGs/star_borders_svg.vue'
@@ -13,6 +11,8 @@
   import wave_little_svg from '../components/SVGs/wave_little_svg.vue'
 
   onMounted(() => {
+    animations();
+
     const frontEnd = new Splide( '.front-end', {
       type   : 'loop',
       arrows : false,
@@ -52,182 +52,6 @@
     setTimeout(() => {
       backEnd.mount();
     }, 200);
-  });
-
-  onMounted(() => {
-
-    gsap.registerPlugin(CustomEase);
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from(".top", {
-      delay: 1,
-      duration: 1,
-      x: 1000,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.to(".bot", {
-      delay: 2.2,
-      duration: 20,
-      x: 20,
-      repeat: -1,
-      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
-    });
-
-
-    gsap.from(".bot", {
-      duration: 1,
-      delay: 1.15,
-      x: -1000,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.to(".top", {
-      delay: 2,
-      duration: 20,
-      x: -20,
-      repeat: -1,
-      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
-    });
-
-
-    gsap.from(".star_svg", {
-      duration: 1,
-      delay: 1.3,
-      x: -2000,
-      rotate: -360,
-      ease: "power4.out",
-    });
-    gsap.to(".star_svg", {
-      duration: 20,
-      delay: 2.2,
-      x: -20,
-      rotate: 360,
-      repeat: -1,
-      ease: CustomEase.create("custom", "M0,0 C0.3,0 0.2,1 0.5,1 0.8,1 0.7,0 1,0 "),
-    });
-    gsap.to(".star_svg", {
-      duration: 60,
-      delay: 2,
-      rotate: 360,
-      repeat: -1,
-      ease: 'none',
-    });
-
-
-    gsap.from(".star_borders_svg", {
-      duration: 1.5,
-      delay: 1.3,
-      y: 100,
-      scale: 2,
-      rotate: -30,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.to(".star_borders_svg", {
-      duration: 60,
-      delay: 2.5,
-      rotate: 360,
-      ease: "none",
-    });
-
-
-    gsap.from(".arrow_down_svg", {
-      duration: 1.5,
-      delay: 1.35,
-      y: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-
-
-    gsap.from("#content-1 .h2", {
-      scrollTrigger: '#content-1',
-      duration: 1,
-      delay: 0.5,
-      x: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.from("#content-1 p", {
-      scrollTrigger: '#content-1',
-      duration: 1,
-      delay: 0.75,
-      x: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-
-    gsap.from(".illustration", {
-      scrollTrigger: '#content-1',
-      duration: 1,
-      delay: 1,
-      y: -150,
-      opacity: 0,
-      ease: "power4.out",
-    });
-
-    gsap.from("#realisations .h2", {
-      scrollTrigger: '#realisations .h2',
-      duration: 1,
-      delay: 0.5,
-      y: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.from("#realisations .waves:nth-child(1)", {
-      scrollTrigger: '#realisations .h2',
-      duration: 1,
-      delay: 0.5,
-      x: 100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.from("#realisations .waves:nth-child(3)", {
-      scrollTrigger: '#realisations .h2',
-      duration: 1,
-      delay: 0.5,
-      x: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-
-    gsap.from("._innerwav .innerwav-img", {
-      scrollTrigger: '._innerwav',
-      duration: 1,
-      delay: 0.5,
-      x: -100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-    gsap.from("._innerwav .innerwav-video", {
-      scrollTrigger: '._innerwav',
-      duration: .1,
-      delay: 1,
-      opacity: 0,
-      ease: "power4.out"
-    });
-    gsap.from(".description._innerwav", {
-      scrollTrigger: '._innerwav',
-      duration: 1,
-      delay: 0.5,
-      x: 100,
-      opacity: 0,
-      ease: "power4.out",
-    });
-
-    const stars = document.querySelectorAll('.star-container');
-
-    stars.forEach(star => {
-      gsap.from(star, {
-        scrollTrigger: star,
-        duration: 1,
-        delay: 0.5,
-        y: -100,
-        opacity: 0,
-        ease: "power4.out",
-      });
-    });
   });
 
 </script>
@@ -379,13 +203,16 @@
       </div>
 
       <div class="container _realisations _borders">
-        <div class="realisation _innerwav">
-          <video class="innerwav-video" autoplay loop muted>
-            <source src="/res/videos/innerwav.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img class="innerwav-img" src="/res/images/innerwav.jpg" alt="">
-        </div>
+        <a class="img_link" href="innerwav.fr" target="_blank">
+          <div class="realisation _innerwav">
+            <video class="innerwav-video" autoplay loop muted>
+              <source src="/res/videos/innerwav.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+              
+            <img class="innerwav-img" src="/res/images/innerwav.jpg" alt="">
+          </div>
+        </a>
 
         <div class="star-container">
           <star_little_svg />
@@ -429,11 +256,15 @@
           <star_little_svg />
         </div>
 
-        <img class="realisation _la-renaissance" src="/res/images/la_renaissance.jpg" alt="">
+        <a class="img_link" href="https://la-renaissance.com/" target="_blank">
+          <img class="realisation _la-renaissance" src="/res/images/la_renaissance.jpg" alt="">
+        </a>
       </div>
 
       <div class="container _realisations">
-        <img class="realisation _initial-expertise" src="/res/images/bg_initial_expertise.jpg" alt="">
+        <a class="img_link" href="https://www.initial-expertise.fr/" target="_blank">
+          <img class="realisation _initial-expertise" src="/res/images/bg_initial_expertise.jpg" alt="">
+        </a>
 
         <div class="star-container">
           <star_little_svg />
@@ -472,15 +303,24 @@
           <star_little_svg />
         </div>
 
-        <div class="multiple-imgs realisation _borders">
-          <img class="_zetruc" src="/res/images/zetruc1.jpg" alt="">
-          <div class="line"></div>
-          <img class="_zetruc" src="/res/images/zetruc2.jpg" alt="">
-          <div class="line"></div>
-          <img class="_zetruc" src="/res/images/zetruc3.jpg" alt="">
-        </div>
+        <a class="img_link" href="#">
+          <div class="multiple-imgs realisation _borders">
+            <img class="_zetruc" src="/res/images/zetruc1.jpg" alt="">
+            <div class="line"></div>
+            <img class="_zetruc" src="/res/images/zetruc2.jpg" alt="">
+            <div class="line"></div>
+            <img class="_zetruc" src="/res/images/zetruc3.jpg" alt="">
+          </div>
+        </a>
 
       </div>
+
+      <div>
+        <a class="btn-primary" href="/travaux">
+          Je veux en voir +
+        </a>
+      </div>
+
     </div>
 
     <div id="qui-suis-je" class="container px-8 grid grid-cols-12 items-center">
@@ -490,7 +330,7 @@
             <wave_little_svg /> Qui suis-je ?
           </h2>
           <div class="image lg:hidden block">
-            <star_svg />
+            <star_svg className="who_i_am_star" />
             <img src="\res\images\profile.jpg" alt="">
           </div>
           <p>
@@ -503,7 +343,7 @@
         </div>
 
         <div class="image col-span-6 hidden lg:block">
-          <star_svg />
+          <star_svg className="who_i_am_star" />
           <img src="\res\images\profile.jpg" alt="">
         </div>
 
