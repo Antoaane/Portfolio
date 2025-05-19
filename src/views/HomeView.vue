@@ -32,12 +32,11 @@
       pagination: false,
       autoplay: true,
       interval: 1500,
+      delay: 500,
       pauseOnHover: false,
     } );
 
-    setTimeout(() => {
-      frontStyle.mount();
-    }, 100);;
+    frontStyle.mount();
 
     const backEnd = new Splide( '.back-end', {
       type   : 'loop',
@@ -46,12 +45,11 @@
       pagination: false,
       autoplay: true,
       interval: 1500,
+      delay: 1000,
       pauseOnHover: false,
     } );
 
-    setTimeout(() => {
-      backEnd.mount();
-    }, 200);
+    backEnd.mount();
   });
 
 </script>
@@ -120,19 +118,19 @@
                 <div class="splide__track h-full">
                   <ul class="splide__list">
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/html.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/html.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/js.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/js.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/ts.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/ts.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/vue.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/vue.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/react.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/react.svg" alt="">
                     </li>
                   </ul>
                 </div>
@@ -144,13 +142,13 @@
                 <div class="splide__track h-full">
                   <ul class="splide__list">
                     <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
-                      <img class="w-full" src="/res/pictos/logos/css.svg" alt="">
+                      <img class="h-full w-full object-contain" src="/res/pictos/logos/css.svg" alt="">
                     </li>
                     <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
-                      <img class="w-full" src="/res/pictos/logos/sass.svg" alt="">
+                      <img class="h-full w-full object-contain" src="/res/pictos/logos/sass.svg" alt="">
                     </li>
                     <li class="splide__slide sm:p-3 p-1 flex items-center justify-center">
-                      <img class="w-full" src="/res/pictos/logos/tailwind.svg" alt="">
+                      <img class="h-full w-full object-contain" src="/res/pictos/logos/tailwind.svg" alt="">
                     </li>
                   </ul>
                 </div>
@@ -162,16 +160,16 @@
                 <div class="splide__track h-full">
                   <ul class="splide__list">
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/php.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/php.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/laravel.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/laravel.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/wordpress.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/wordpress.svg" alt="">
                     </li>
                     <li class="splide__slide 2xl:p-10 sm:p-5 p-3 flex items-center justify-center">
-                      <img class="h-full" src="/res/pictos/logos/themosis.svg" alt="">
+                      <img class="h-full w-full object-contain scale-50" src="/res/pictos/logos/themosis.svg" alt="">
                     </li>
                   </ul>
                 </div>

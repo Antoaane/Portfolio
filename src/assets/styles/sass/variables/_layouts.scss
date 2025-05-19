@@ -39,3 +39,12 @@ $r-full: 9999px;
     $r-xxl: 4rem;
     $r-xxxl: 8rem;
 }
+
+img, video {
+    max-width: none;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}

@@ -1,3 +1,2 @@
 @import './normalize.css';
-@import './tailwind/output.css';
-@import './sass/output.css';
+@import "tailwindcss";
