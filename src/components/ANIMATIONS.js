@@ -163,22 +163,6 @@ export function animations() {
         ease: "power4.out",
     });
 
-    gsap.from("._   ", {
-        scrollTrigger: '._innerwav',
-        duration: .1,
-        delay: 1,
-        opacity: 0,
-        ease: "power4.out"
-    });
-    gsap.from(".description._innerwav", {
-        scrollTrigger: '._innerwav',
-        duration: 1,
-        delay: 0.5,
-        x: 100,
-        opacity: 0,
-        ease: "power4.out",
-    });
-
     const stars = document.querySelectorAll('.star-container');
 
     console.log(stars);
