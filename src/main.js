@@ -1,5 +1,6 @@
+import '@/assets/styles/normalize.css';
 import '@splidejs/splide/css';
-import '@/assets/styles/sass/input.scss'
+import '@/assets/styles/sass/input.scss';
 
 import { createApp } from 'vue'
 import App from './App.vue'

@@ -5,25 +5,21 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "tailwind": "npx tailwindcss -i ./src/assets/styles/tailwind/components.css -o ./src/assets/styles/tailwind/output.css --watch --minify",
-    "watch": "concurrently \"npx tailwindcss -i ./src/assets/styles/tailwind/components.css -o ./src/assets/styles/tailwind/output.css --watch --minify\" \"sass --watch ./src/assets/styles/sass/input.scss ./src/assets/styles/sass/output.css\" \"vite\"",
+    "watch": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-vue": "^0.3.6",
     "@splidejs/splide": "^4.1.4",
-    "@tailwindcss/vite": "^4.1.7",
     "gsap": "^3.12.5",
     "lottie-web": "^5.12.2",
-    "sass": "^1.89.0",
-    "tailwindcss": "^4.1.7",
-    "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "sass": "^1.97.3",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
-    "concurrently": "^8.0.1",
-    "vite": "^6.3.5"
+    "vite": "^6.4.1"
   }
 }

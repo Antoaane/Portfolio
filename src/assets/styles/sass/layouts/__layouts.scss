@@ -12,7 +12,29 @@ body {
 }
 
 .container {
+    width: 100%;
     margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media screen and (min-width: $sm) {
+        max-width: $sm;
+    }
+    @media screen and (min-width: $md) {
+        max-width: $md;
+    }
+    @media screen and (min-width: $lg) {
+        max-width: $lg;
+    }
+    @media screen and (min-width: $xl) {
+        max-width: $xl;
+    }
+    @media screen and (min-width: $xxl) {
+        max-width: $xxl;
+    }
+    @media screen and (min-width: $xxxl) {
+        max-width: $xxxl;
+    }
 }
 
 html {
