@@ -16,6 +16,6 @@ useHomeEffects();
     <HeroSection :content="home.hero" />
     <SkillsSection :content="home.skills" />
     <ProjectsSection :content="home.projects" />
-    <AboutSection :content="home.about" />
+    <!-- <AboutSection :content="home.about" /> -->
   </main>
 </template>
